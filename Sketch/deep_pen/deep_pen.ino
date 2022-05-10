@@ -22,8 +22,8 @@
 #define BLE_SENSE_UUID(val) ("4798e0f2-" val "-4d68-af64-8a8f5258404e")
 
 namespace {
-  constexpr int num_labels = 11;
-  const char* labels[num_labels] = {"0", "1", "10", "2", "3", "4", "5", "6", "7", "8", "9"};
+  constexpr int num_labels = 12;
+  const char* labels[num_labels] = {"0", "1", "10", "11", "2", "3", "4", "5", "6", "7", "8", "9"};
 
   constexpr int stroke_transmit_stride     = 2;
   constexpr int stroke_transmit_max_length = 160;
@@ -59,9 +59,9 @@ namespace {
   int gyroscope_data_index = 0;
   float gyroscope_sample_rate = 0.0f;
 
-  float current_velocity[3] = {0.0f, 0.0f, 0.0f};
-  float current_position[3] = {0.0f, 0.0f, 0.0f};
-  float current_gravity[3] = {0.0f, 0.0f, 0.0f};
+  float current_velocity[3]        = {0.0f, 0.0f, 0.0f};
+  float current_position[3]        = {0.0f, 0.0f, 0.0f};
+  float current_gravity[3]         = {0.0f, 0.0f, 0.0f};
   float current_gyroscope_drift[3] = {0.0f, 0.0f, 0.0f};
 
   int32_t stroke_length = 0;
@@ -73,7 +73,7 @@ namespace {
   enum { 
     eWaiting = 0,
     eDrawing = 1,
-    eDone = 2,
+    eDone    = 2,
   };
 
   // Create an area of memory to use for input, output, and intermediate arrays.
@@ -671,6 +671,16 @@ void loop() {
         max_index = i;
       }
     }
-    TF_LITE_REPORT_ERROR(error_reporter, "Found %s (%d)", labels[max_index], max_score);
+    
+    const char *recognized;
+    if      (labels[max_index] == "10")
+      recognized = "a";
+    else if (labels[max_index] == "11")
+      recognized = "b";
+    else
+      recognized = labels[max_index];
+    
+    
+    TF_LITE_REPORT_ERROR(error_reporter, "Caracter detectado: %s (%d)", recognized, max_score);
   }
 }
