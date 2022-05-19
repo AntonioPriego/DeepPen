@@ -1,5 +1,5 @@
 /* =================== deep_pen.ino =====================
-    Sketch for DeepPen training
+    Sketch for DeepPen
     By Antonio Priego Raya
     Code created for the DeepPen project:
     https://github.com/AntonioPriego/DeepPen
@@ -22,8 +22,8 @@
 #define BLE_SENSE_UUID(val) ("4798e0f2-" val "-4d68-af64-8a8f5258404e")
 
 namespace {
-  constexpr int num_labels = 12;
-  const char* labels[num_labels] = {"0", "1", "10", "11", "2", "3", "4", "5", "6", "7", "8", "9"};
+  constexpr int num_labels = 26;
+  const char* labels[num_labels] = {"0", "1", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "2", "20", "21", "22", "23", "24", "25", "3", "4", "5", "6", "7", "8", "9"};
 
   constexpr int stroke_transmit_stride     = 2;
   constexpr int stroke_transmit_max_length = 160;
@@ -664,7 +664,7 @@ void loop() {
 
     int8_t max_score;
     int max_index;
-    for (int i = 0; i < 11; ++i) {
+    for (int i = 0; i < num_labels; ++i) {
       const int8_t score = output->data.int8[i];
       if ((i == 0) || (score > max_score)) {
         max_score = score;
@@ -672,13 +672,62 @@ void loop() {
       }
     }
     
+    
     const char *recognized;
-    if      (labels[max_index] == "10")
+    if      (labels[max_index] == "0")
       recognized = "a";
-    else if (labels[max_index] == "11")
+    else if (labels[max_index] == "1")
       recognized = "b";
+    else if (labels[max_index] == "2")
+      recognized = "c";
+    else if (labels[max_index] == "3")
+      recognized = "d";
+    else if (labels[max_index] == "4")
+      recognized = "e";
+    else if (labels[max_index] == "5")
+      recognized = "f";
+    else if (labels[max_index] == "6")
+      recognized = "g";
+    else if (labels[max_index] == "7")
+      recognized = "h";
+    else if (labels[max_index] == "8")
+      recognized = "i";
+    else if (labels[max_index] == "9")
+      recognized = "j";
+    else if (labels[max_index] == "10")
+      recognized = "k";
+    else if (labels[max_index] == "11")
+      recognized = "l";
+    else if (labels[max_index] == "12")
+      recognized = "m";
+    else if (labels[max_index] == "13")
+      recognized = "n";
+    else if (labels[max_index] == "14")
+      recognized = "o";
+    else if (labels[max_index] == "15")
+      recognized = "p";
+    else if (labels[max_index] == "16")
+      recognized = "q";
+    else if (labels[max_index] == "17")
+      recognized = "r";
+    else if (labels[max_index] == "18")
+      recognized = "s";
+    else if (labels[max_index] == "19")
+      recognized = "t";
+    else if (labels[max_index] == "20")
+      recognized = "u";
+    else if (labels[max_index] == "21")
+      recognized = "v";
+    else if (labels[max_index] == "22")
+      recognized = "w";
+    else if (labels[max_index] == "23")
+      recognized = "x";
+    else if (labels[max_index] == "24")
+      recognized = "y";
+    else if (labels[max_index] == "25")
+      recognized = "z";
     else
-      recognized = labels[max_index];
+      recognized = "0";
     
     
     TF_LITE_REPORT_ERROR(error_reporter, "Caracter detectado: %s (%d)", recognized, max_score);

@@ -23,10 +23,9 @@
   }
 
   .button {
-    background-color: #42B0FD; border: none; color: black; padding: 1px; text-align: center;
-    text-decoration: none; font-size: 12px; margin: 12px 20px; height: 30px; width: 120px;
-    border-radius: 0%; outline:none; font-family: 'Roboto', sans-serif;
-    float: left;
+    background-color: #42B0FD; color: black; padding: 1px; font-size: 11.5px; margin: 10px 15px;
+    height: 30px; width: 118px; border-radius: 1%; font-family: 'Roboto', sans-serif; float: left;
+    display: flex; justify-content: center; align-items: center;
   }
     
   #bigButton {
@@ -81,7 +80,7 @@
 
   .label {
     height: 20px;
-    min-width: 100px
+    min-width: 35px;
     display: inline;
     font-size: 15px;
     float: left;
@@ -120,8 +119,8 @@
 
   <div class="container">
     <div class="status widget">
-      <button class="button" id="downloadButton">Descargar JSON</button>
-      <button class="button" id="bigButton">Vincular Bluetooth</button>
+      <a class="button" id="downloadButton">Descargar JSON</a>
+      <a class="button" id="bigButton">Vincular Bluetooth</a>
       <div class="bluetooth-label" id="bluetooth">Placa desconectada 🔴</div>
       <div class="count-label" id="count"></div>
     </div>
@@ -472,7 +471,6 @@ Array.prototype.latest = function(){return this[this.length - 1];};
     }
   }
 
-  var skip_frame = false;
   function draw(){
     function updateViz(sensor,fns){
       if (BLEsense[sensor].rendered == false) { // only render if new values are received
@@ -482,9 +480,6 @@ Array.prototype.latest = function(){return this[this.length - 1];};
         BLEsense[sensor].rendered = true;
       }
     }
-    if (skip_frame == false){ // TODO update with fuction to iterate object with viz function as a property      
-      skip_frame = true; // render alternate frames = 30fps
-    } else {skip_frame=false;}
     requestAnimationFrame(draw);
   }
   
