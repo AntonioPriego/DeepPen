@@ -1,5 +1,5 @@
 /* =================== deep_pen_model_data.cpp ===================
-    Sketch for DeepPen training
+    Sketch for DeepPen
     By Antonio Priego Raya
     Code created for the DeepPen project:
     https://github.com/AntonioPriego/DeepPen

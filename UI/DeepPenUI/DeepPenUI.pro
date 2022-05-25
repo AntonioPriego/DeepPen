@@ -1,4 +1,8 @@
 QT       += core gui
+QT       += serialport
+QT       += widgets
+QT       += webkitwidgets
+QT       += webenginewidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,17 +16,21 @@ SOURCES += \
     deeppen.cpp \
     main.cpp \
     mainwindow.cpp \
+    readerthread.cpp \
     task.cpp \
     tools.cpp
 
 HEADERS += \
     deeppen.h \
     mainwindow.h \
+    readerthread.h \
     task.h \
     tools.h
 
 FORMS += \
     mainwindow.ui
+
+QMAKE_CXXFLAGS += -std=gnu++11
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -631,7 +631,9 @@ void loop() {
   }
 
   if (done_just_triggered) {
+    
     RasterizeStroke(stroke_points, *stroke_transmit_length, 0.6f, 0.6f, raster_width, raster_height, raster_buffer);
+    /*
     for (int y = 0; y < raster_height; ++y) {
       char line[raster_width + 1];
       for (int x = 0; x < raster_width; ++x) {
@@ -648,7 +650,7 @@ void loop() {
       line[raster_width] = 0;
       Serial.println(line);
     }
-    
+    */
     TfLiteTensor* model_input = interpreter->input(0);
     for (int i = 0; i < raster_byte_count; ++i) {
       model_input->data.int8[i] = raster_buffer[i];
@@ -730,6 +732,7 @@ void loop() {
       recognized = "0";
     
     
-    TF_LITE_REPORT_ERROR(error_reporter, "Caracter detectado: %s (%d)", recognized, max_score);
+    //TF_LITE_REPORT_ERROR(error_reporter, "Caracter detectado: %s (%d)", recognized, max_score);
+    TF_LITE_REPORT_ERROR(error_reporter, "%s", recognized);
   }
 }

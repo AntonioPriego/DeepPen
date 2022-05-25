@@ -3,10 +3,6 @@
 #include "deeppen.h"
 #include "tools.h"
 
-#include <QDebug>
-#include <QPixmap>
-
-
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -31,6 +27,24 @@ MainWindow::MainWindow(QWidget *parent)
 
     //Set Startup Page
     setPage(STARTUPINDEX);
+
+    //Set Photo on AboutDev
+    setPersonalPhoto();
+
+    //Set Blackboard HTML
+    setBlackboard();
+
+    // Linking thread to 'recognisedLetters' label
+    readerThread = new ReaderThread(this);
+    readerThread->start();
+    connect(readerThread, &ReaderThread::sendReaded, [&](QString _readed) {
+        ui->recognisedLetters->setText(_readed);
+    } );
+
+    // Linking thread to connected status
+    connect(readerThread, &ReaderThread::isConnected, [&](bool status) {
+        setButtonSyncClickable(!status);
+    } );
 }
 
 MainWindow::~MainWindow()
@@ -204,7 +218,7 @@ void MainWindow::setButtonSyncClickable(bool clickable)
 
     ui->ConectedStatusRB->setCheckable(true);  //Initially non checkable bc user cannot change it
     ui->ConectedStatusRB->setChecked(!clickable);
-    delay(10); //without this delay, it is not checked
+    delay(1000); //without this delay, it is not checked
     ui->ConectedStatusRB->setCheckable(false); //Set non checkable again
 
     ui->ButtonSync->setEnabled(clickable);
@@ -243,9 +257,73 @@ void MainWindow::setToolTips()
 
 void MainWindow::setStartupImage()
 {
-    QPixmap penImage("../DeepPen/icons/placeholderPen.png");
+    QPixmap penImage("./images/placeholderPen.png");
 
     ui->StartupImage->setPixmap(penImage.scaled(ui->StartupImage->width(),
                                                 ui->StartupImage->height(),
                                                 Qt::KeepAspectRatio));
+}
+
+void MainWindow::setPersonalPhoto()
+{
+    QPixmap personalPhoto("./images/personalPhoto.png");
+
+    ui->personalPhoto->setPixmap(personalPhoto.scaled(ui->personalPhoto->width(),
+                                                     ui->personalPhoto->height(),
+                                                     Qt::KeepAspectRatio));
+}
+
+void MainWindow::on_clearButton_clicked()
+{
+    readerThread->cleanReadString();
+}
+
+
+void MainWindow::on_linkedinButton_clicked()
+{
+    QString url = "https://www.linkedin.com/in/antonio-priego-raya-ba4a04206/";
+    QDesktopServices::openUrl(QUrl(url));
+}
+
+
+void MainWindow::on_githubButton_clicked()
+{
+    QString url = "https://github.com/AntonioPriego";
+    QDesktopServices::openUrl(QUrl(url));
+}
+
+void MainWindow::setBlackboard()
+{
+    ui->stackedWidget->removeWidget(ui->BlackboardPage);
+    delete ui->BlackboardPage;
+
+    //ui->blackboardHtml->setSource(QUrl("./html/tmp.html"));
+
+
+    //QWebView *view = ui->blackboardHtml;
+    //view->load(QUrl("qrc://html//tmp.html/"));
+    //view->show();
+
+    //ui->blackboardHtml->load(QUrl("qrc://images//sample page.html/"));
+    //ui->blackboardHtml->show();
+
+    qDebug()<<( ui->stackedWidget->count() );
+
+    QWebEngineView* web = new QWebEngineView();
+    QWebEngineProfile *profile = new QWebEngineProfile();
+    profile->setHttpUserAgent("--enable-experimental-web-platform-features");
+
+    QWebEnginePage *page = new QWebEnginePage(profile, web);
+    //page()->settings()->setAttribute(QWebSettings::DeveloperExtrasEnabled, true);
+    web->setPage(page);
+    //web->load(QUrl("chrome://flags/#enable-experimental-web-platform-features"));
+    web->load(QUrl("file:///home/tony/Universidad/TFG/C%C3%B3digo_arduino/DataCollector/DeepPen_DataCollector.html"));
+    web->show();
+//--enable-experimental-web-platform-features
+
+    web->page()->settings();
+
+    ui->stackedWidget->addWidget(web);
+
+    qDebug()<<( ui->stackedWidget->count() );
 }

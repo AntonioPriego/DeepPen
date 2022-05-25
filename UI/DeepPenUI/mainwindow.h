@@ -1,8 +1,19 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <QDir>
+#include <QDebug>
+#include <QPixmap>
+#include <QDesktopServices>
 #include <QMainWindow>
-
+#include <QTextBrowser>
+#include <QSerialPort>
+#include <QSerialPortInfo>
+#include <QWebView>
+#include <QWebEngineView>
+#include <QtWebEngineWidgets>
+#include <QWebEngineProfile>
+#include "readerthread.h"
 
 
 QT_BEGIN_NAMESPACE
@@ -38,25 +49,35 @@ private slots:
     void setPage(int index);
     void setToolTips();
     void setStartupImage();
+    void setPersonalPhoto();
+    void setBlackboard();
+
+    void on_clearButton_clicked();
+
+    void on_linkedinButton_clicked();
+
+    void on_githubButton_clicked();
 
 private:
     Ui::MainWindow *ui;
 
+    ReaderThread *readerThread;
+
     //STACKED WIDGET INDEXS
     static const int STARTUPINDEX        = 0;
     static const int LETTERBYLETTERINDEX = 1;
-    static const int BLACKBOARDINDEX     = 2;
-    static const int ABOUTDEVINDEX       = 3;
+    static const int BLACKBOARDINDEX     = 3;
+    static const int ABOUTDEVINDEX       = 2;
 
 
     //SIDEBAR CONDITIONS
     int expandedMenuWidth = 240;
     int compactMenuWidth  = 80;
-    QIcon unfoldIcon = QIcon("../DeepPen/icons/deployArrowWhite.png");
-    QIcon foldIcon   = QIcon("../DeepPen/icons/undeployArroyWhite.png");
-    QIcon aIcon          = QIcon("../DeepPen/icons/letter_shifted.png");
-    QIcon blackboardIcon = QIcon("../DeepPen/icons/blackboard_shifted.png");
-    QIcon aboutIcon      = QIcon("../DeepPen/icons/aboutDev.png");
+    QIcon unfoldIcon = QIcon("./icons/deployArrowWhite.png");
+    QIcon foldIcon   = QIcon("./icons/undeployArroyWhite.png");
+    QIcon aIcon          = QIcon("./icons/letter_shifted.png");
+    QIcon blackboardIcon = QIcon("./icons/blackboard_shifted.png");
+    QIcon aboutIcon      = QIcon("./icons/aboutDev.png");
     QString textButtonModesCompact[3] = {"Letter by...    "     ,"Blackboard..."  ,"About..."};
     QString textButtonModesExpand[3]  = {"Letter by letter Mode","Blackboard Mode","About developer"};
     QString buttonStyleIdle = "QPushButton {                          "

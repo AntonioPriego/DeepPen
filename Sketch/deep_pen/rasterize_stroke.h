@@ -1,5 +1,5 @@
 /* =================== rasterize_stroke.h ===================
-    Sketch for DeepPen training
+    Sketch for DeepPen
     By Antonio Priego Raya
     Code created for the DeepPen project:
     https://github.com/AntonioPriego/DeepPen
