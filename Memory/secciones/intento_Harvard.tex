@@ -1,0 +1,165 @@
+\begin{mimargen}{-1cm}{-1cm}
+
+\chapter{Intento Harvard}
+
+Comienzo ejecutando tal cual el código del repo
+\url{https://github.com/petewarden/magic_wand}.
+
+Importante tener la biblioteca de tensorflow actualizada(en este
+caso la provista por pete warden).
+
+Visto cómo toma pete los datos, pruebo a hacerlo.
+Cargar el programa de recolección de datos en la placa(creo que funciona el magic\_wand,
+PROBAR).
+Acceder a la web de recolección. Recolectar.
+Para acceder a la web, hay que hacerlo con chrome y con la flag
+'Experimental Web Platform features' activa en 'chrome://flags/'
+
+
+Hay un error con el DataCollector, además de que asigna mal los índices(index)
+al borrar muestras, no guarda todas las muestras que tomas, da la sensación de que
+hay un límite.
+Para contar el número de muestras que hay en el JSON, uso la siguiente línea bash:
+\begin{lstlisting}[language=bash]
+~$ grep -o index <nombre_archivo>.json | wc -l
+\end{lstlisting}
+
+
+
+\textbf{CAMBIAR ORIENTACIÓN DE LA PLACA} \\
+Como no hay referencias de la orientación original de los sensores en ningún
+datasheet, con el propio sketch que hice originalmente para tomar las muestras,
+comprobé la posición con la que funciona, la comparé con la posición que quiero
+tener y gracias a eso pude hacer el siguiente cambio.\\
+Lo mejor que he conseguido cambiando en la biblioteca de los sensores,
+en LSM9DS1.cpp en todas los sensores:
+\begin{lstlisting}[language=c++]
+//          Original         //     Orientacion cambiada
+x = data[0] * 4.0 / 32768.0; // z = -data[0] * 4.0 / 32768.0;
+y = data[1] * 4.0 / 32768.0; // y =  data[1] * 4.0 / 32768.0;
+z = data[2] * 4.0 / 32768.0; // x =  data[2] * 4.0 / 32768.0;
+\end{lstlisting}
+
+\newpage
+Creo que habría que cambiar algo de deep\_pen.ino(a partir de línea 408)
+\begin{lstlisting}[language=c++]
+    const float gy = current_gravity[1];
+    const float gz = current_gravity[2];
+    float gmag = sqrtf((gy * gy) + (gz * gz));
+    if (gmag < 0.0001f) {
+      gmag = 0.0001f;
+    }
+    // ...
+\end{lstlisting}
+
+
+\textbf{LA OBTENCIÓN DE DATOS TIENE UN FALLO AL BORRAR MUESTRAS} \\
+Este fallo aparentemente se produce al borrar instancias por debajo de
+la última. En ocasiones, se produce un pequeño error en las comprobaciones
+de índices de muestras, por lo que se borran varias muestras y estas terminan
+con índices desordenados.\\
+Para paliar este problema, he creado un pequeño script que toma el número de
+muestras y ordena los índices de las mismas.\\
+
+\textbf{MODELO}\\
+Se trata de un modelo de aprendizaje supervisado, es decir, que está basado en
+etiquetas(\textit{labels}) estas etiquetas representarán las distintas soluciones
+a las que hará frente el modelo; en nuestro caso, letras.
+La forma que emplearemos para representar dichas letras como input para el modelo,
+serán imágenes. Aunque para tomar dichas imágenes, hacemos uso del giroscopio
+y el acelerómetro de la placa.\\
+
+
+\textbf{LEER DEL PUERTO SERIE EN QT}
+Hay que añadir al *.pro del proyecto QT:
+\begin{lstlisting}[language=make]
+  QT += serialport
+\end{lstlisting}
+Y tras esto, añadir la biblioteca con normalidad y acceder al puerto
+con el nombre, en nuestro caso, "ttyACM0".\\\\
+
+\textbf{FALLO RECONOCIMIENTO DE IMÁGENES QT}\\
+Al importar imágenes en QT tras haber exportado el programa a Win y Linux para
+probar que todo fuera correctamente, las imágenes dejaron de mostrarse.\\
+Esto se debe a que cambió la ruta del proyecto al directorio en el que se
+exportó. Por tanto las rutas especificadas para las imágenes, dejaron de ser
+válidas. Para corregir este problema, basta con cambiar el 'Build directory' del
+proyecto(Desde 'Projects' en el panel de la derecha del QT creator).\\
+
+\textbf{HEBRAS QT}\\
+Para la lectura del puerto serie desde el programa, necesitamos imporat
+
+\textbf{VISOR WEB QT}\\
+Para hacer empotrar html en qt, importamos las bibliotecas de QWeb. Para ello,
+necesitamos aantes instlar todo el QtWebKit siguiendo las instrucciones:
+\url{https://github.com/OpenBoard-org/OpenBoard/wiki/Build-OpenBoard-on-Ubuntu-20.04}
+
+\textbf{VINCULAR PUERTO SERIE A PLACA}\\
+Para ello, haré uso de las reglas de udev del sistema linux.
+Lo primero es conocer la información de nuestra placa:
+\begin{lstlisting}[language=make]
+  ~$ lsusb
+[...]
+Bus 003 Device 004: ID 2341:805a Arduino SA Nano 33 BLE
+[...]
+\end{lstlisting}
+De aquí podemos extraer el fabricante(o idVendor) y el producto de este fabricante
+(o idProduct). Necesitaremos ambos.
+
+Ahora necesitamos el serial del puerto al que vincularemos la placa:
+\begin{lstlisting}[language=make]
+  ~$ udevadm info -a -n /dev/ttyACM0 | grep serial
+ATTRS{serial}=="185F25FD3EF48040"
+\end{lstlisting}
+Con esto, ya podemos crear la regla para vincular univocamente el puerto a la placa
+y evitar así problemas con la detección en el UI.\\
+En /etc/udev/rules.d/99-ftdi.rules (en mi caso, varía dependiendo del sistema),
+crearemos la regla \\SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="805a",
+ATTRS{serial}=="185F25FD3EF48040", SYMLINK+="ttySLAB0"\\por los datos obtenidos.\\
+
+\textbf{CAMBIOS MODELO}\\
+Cambiar el tamaño del kernel de las capas Conv2D de 3 a 4, resulta muy efectivo,
+a costa, evidentemente, de aumentar el tamaño que ocupa el modelo.\\
+Al pasar de 4 a 5, el modelo arroja unos datos de efectividad teóricos extremadamente
+buenos, alcanzando cifras de precisión mucho más altas con menos epochs.
+En general, podemos extrapolar que, a mayor tamaño del kernel, mejor precisión pero
+mayor tamaño del modelo. En nuestro caso no llega a ser un problema, ya que, aunque
+estamos usando un dispositivo de memoria limitada, no llega a ocuparse toda la memoria
+del mismo, al menos por ahora.\\
+
+\textbf{PRUEBAS BLUETOOTH}\\
+He tenido que instalar qtconnectivity5-dev para probar el QT project que estoy probando.\\
+
+\textbf{POR QUÉ ESTA PLACA?}\\
+Aduino Nano Sense 33 BLE\\
+Por qué arduino: Documentación, respaldo comunidad, IDE facilita trabajo, etc.\\
+Por qué Nano: Queremos integrarla en un 'lápiz', debe ser un dispositivo pequeño.\\
+Por qué Sense: Necesitamos los sensores para el reconocimiento de movimiento.\\
+BLE: Por pura utilidad, es mucho más cómodo utilizar el lápiz de forma inalámbrica.
+Además no tiene mucho sentido integrar el procesamiento en un dispositivo pequeño
+si va a depender de un ordenador.\\
+
+\textbf{DESCONEXIÓN DEL PROGRAMA A BT AL ESCRIBIR PLACA EN RX}\\
+Para el control de flujo de la comunicación bluetooth(asegurarse de que recibimos
+bien y solo una vez cada letra), implemento un sistema de señales.
+Cuando recibimos una letra desde la placa(mediante canal tx), el programa la almacena y
+envía una señal de que ha recibido la letra(mediante canal rx) y cuando la placa
+recibe esta señal, borra del canal tx la letra para que no vuelva a leerse desde el
+programa.
+El problema descrito, viene, creo, al escribir en rx la señal de recibo. Por algún
+motivo, el programa se desconecta de la placa.\\
+
+
+\textbf{MÉTODO DE ENVÍO DE BUFFER DE LETRAS PARA CONEXIÓN BT CUANDO HAYA UNA CADENA
+PREVIA A CONEXIÓN}\\
+
+~\\~\\~\\Documentación Bluetooth LE:
+https://doc.qt.io/qt-6/qtbluetooth-le-overview.html
+
+~\\~\\~\\Visualizar red neuronal :
+http://alexlenail.me/NN-SVG/index.html
+
+~\\~\\~\\Documentación sobre Keras:
+https://keras.io/api/
+
+\end{mimargen}

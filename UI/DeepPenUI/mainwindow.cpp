@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "deeppen.h"
 #include "tools.h"
 
 
@@ -139,11 +138,11 @@ void MainWindow::resetButtonsClicked()
 
 void MainWindow::setTooltips()
 {
-    ui->ButtonToggle->setToolTip("Fold and unfold the mode sidebar");
-    ui->ButtonAboutDev->setToolTip("Info about the project and the developer");
-    ui->ButtonReadMode->setToolTip("Displays the letters recognized by DeepPen one by one");
+    ui->ButtonToggle->setToolTip    ("Fold and unfold the mode sidebar");
+    ui->ButtonAboutDev->setToolTip  ("Info about the project and the developer");
+    ui->ButtonReadMode->setToolTip  ("Displays the letters recognized by DeepPen one by one");
     ui->ButtonBlackboard->setToolTip("Displays the DeepPen path as if it were a blackboard");
-    ui->ButtonSync->setToolTip("Synchronizes with the DeepPen when powered on");
+    ui->ButtonSync->setToolTip      ("Synchronizes with the DeepPen when powered on");
 }
 
 
@@ -209,7 +208,7 @@ void MainWindow::setButtonSyncClickable(bool clickable)
         ui->ButtonSync->setStyleSheet("QPushButton {"
                                           "background-color:rgb(60, 60, 60);"
                                           "border-color:rgb(100, 100, 100);"
-                                      "});"
+                                      "}"
                                       );
     }
 
@@ -218,7 +217,7 @@ void MainWindow::setButtonSyncClickable(bool clickable)
 
     ui->ConectedStatusRB->setCheckable(true);  //Initially non checkable bc user cannot change it
     ui->ConectedStatusRB->setChecked(!clickable);
-    delay(1000); //without this delay, it is not checked
+    delay(100); //without this delay, it is not checked
     ui->ConectedStatusRB->setCheckable(false); //Set non checkable again
 
     ui->ButtonSync->setEnabled(clickable);
@@ -307,23 +306,33 @@ void MainWindow::setBlackboard()
     //ui->blackboardHtml->load(QUrl("qrc://images//sample page.html/"));
     //ui->blackboardHtml->show();
 
-    qDebug()<<( ui->stackedWidget->count() );
+    //qDebug()<<( ui->stackedWidget->count() );
 
-    QWebEngineView* web = new QWebEngineView();
-    QWebEngineProfile *profile = new QWebEngineProfile();
-    profile->setHttpUserAgent("--enable-experimental-web-platform-features");
+    //QWebEngineView* web = new QWebEngineView();
+    //QWebEngineProfile *profile = new QWebEngineProfile();
+    //rofile->setHttpUserAgent("--enable-experimental-web-platform-features");
 
-    QWebEnginePage *page = new QWebEnginePage(profile, web);
+    //QWebEnginePage *page = new QWebEnginePage(profile, web);
     //page()->settings()->setAttribute(QWebSettings::DeveloperExtrasEnabled, true);
-    web->setPage(page);
+    //web->setPage(page);
     //web->load(QUrl("chrome://flags/#enable-experimental-web-platform-features"));
-    web->load(QUrl("file:///home/tony/Universidad/TFG/C%C3%B3digo_arduino/DataCollector/DeepPen_DataCollector.html"));
-    web->show();
+    //web->load(QUrl("file:///home/tony/Universidad/TFG/C%C3%B3digo_arduino/DataCollector/DeepPen_DataCollector.html"));
+    //web->show();
 //--enable-experimental-web-platform-features
 
-    web->page()->settings();
+    //web->page()->settings();
 
-    ui->stackedWidget->addWidget(web);
+    //ui->stackedWidget->addWidget(web);
 
-    qDebug()<<( ui->stackedWidget->count() );
+    //qDebug()<<( ui->stackedWidget->count() );
 }
+
+
+
+
+
+
+
+
+
+

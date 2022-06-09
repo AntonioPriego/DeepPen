@@ -8,9 +8,6 @@
     (https://github.com/petewarden/magic_wand)
 ============================================================= */
 
-#ifndef TENSORFLOW_LITE_MICRO_EXAMPLES_MAGIC_WAND_RASTERIZE_STROKE_H
-#define TENSORFLOW_LITE_MICRO_EXAMPLES_MAGIC_WAND_RASTERIZE_STROKE_H
-
 #include <cstdint>
 
 void RasterizeStroke(
@@ -20,6 +17,5 @@ void RasterizeStroke(
     float y_range, 
     int width, 
     int height,
-    int8_t* out_buffer);
-
-#endif   // TENSORFLOW_LITE_MICRO_EXAMPLES_MAGIC_WAND_RASTERIZE_STROKE_H
+    int8_t* out_buffer
+);
