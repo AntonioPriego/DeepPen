@@ -16,39 +16,38 @@
 
 // #define DEBUG_MODE //(stroke_collector.cpp [line 24])
 
+/************************************* BLE SETUP *************************************/
+// Device properties
+const char* nameOfPeripheral     = "DeepPen";
+const char* serviceUuid          = "00001101-0000-1000-8000-00805f9b34fb";
+const char* rxCharacteristicUuid = "00001142-0000-1000-8000-00805f9b34fb";
+const char* txCharacteristicUuid = "00001143-0000-1000-8000-00805f9b34fb";
 
-////////////////////////////// Prueba BT /////////////////////////////
-// Device name
-const char* nameOfPeripheral = "PruebaDeepPen";
-const char* uuidOfService = "00001101-0000-1000-8000-00805f9b34fb";
-const char* uuidOfRxChar = "00001142-0000-1000-8000-00805f9b34fb";
-const char* uuidOfTxChar = "00001143-0000-1000-8000-00805f9b34fb";
+// BLE service 
+BLEService letterSenderService(serviceUuid);
 
-bool rxSignal = false;
+// Setup rx data format & active signal boolean
+const int WRITE_BUFFER_SIZE         = 16;
+bool      WRITE_BUFFER_FIZED_LENGTH = false;
+bool      rxSignal                  = false;
 
-// BLE Service
-BLEService microphoneService(uuidOfService);
+// Creating rx & tx characteristics
+BLECharacteristic     rxChar(rxCharacteristicUuid, BLEWriteWithoutResponse | BLEWrite, WRITE_BUFFER_SIZE, WRITE_BUFFER_FIZED_LENGTH);
+BLEByteCharacteristic txChar(txCharacteristicUuid, BLERead | BLENotify | BLEBroadcast);
 
-// Setup the incoming data characteristic (RX).
-const int WRITE_BUFFER_SIZE = 16;
-bool WRITE_BUFFER_FIZED_LENGTH = false;
 
-// RX / TX Characteristics
-BLECharacteristic rxChar(uuidOfRxChar, BLEWriteWithoutResponse | BLEWrite, WRITE_BUFFER_SIZE, WRITE_BUFFER_FIZED_LENGTH);
-BLEByteCharacteristic txChar(uuidOfTxChar, BLERead | BLENotify | BLEBroadcast);
 
-//////////////////////////////////////////////////////////////////////
-
+/********************************* EVENT MANAGEMENT *********************************/
 void onBLEConnected(BLEDevice central) {
   if (DEBUG_MODE) {
-    Serial.print("Connected event, central: ");
+    Serial.print("Connected to central: ");
     Serial.println(central.address());
   }
 }
 
 void onBLEDisconnected(BLEDevice central) {
   if (DEBUG_MODE){
-    Serial.print("Disconnected event, central: ");
+    Serial.print("Disconnected event from central: ");
     Serial.println(central.address());
   }
 }
@@ -60,6 +59,8 @@ void onRxCharValueUpdate(BLEDevice central, BLECharacteristic characteristic) {
   rxChar.writeValue(int32_t(','),true);
 }
 
+
+/********************************* SETUP FUNCTION *********************************/
 void setup()
 {
   Serial.begin(9600);
@@ -68,7 +69,7 @@ void setup()
 
   if (!IMU.begin()) {
     if (DEBUG_MODE)
-      Serial.println("Failed to initialized IMU!");
+      Serial.println("Error: Could not start IMU");
     while (1);
   }
   
@@ -76,7 +77,7 @@ void setup()
 
   if (!BLE.begin()) {
     if (DEBUG_MODE)
-      Serial.println("Failed to initialized BLE!");
+      Serial.println("Error: Could not start BLE");
     while (1);
   }
 
@@ -100,10 +101,10 @@ void setup()
   }
   // Create BLE service and characteristics.
   BLE.setLocalName(nameOfPeripheral);
-  BLE.setAdvertisedService(microphoneService);
-  microphoneService.addCharacteristic(rxChar);
-  microphoneService.addCharacteristic(txChar);
-  BLE.addService(microphoneService);
+  BLE.setAdvertisedService(letterSenderService);
+  letterSenderService.addCharacteristic(rxChar);
+  letterSenderService.addCharacteristic(txChar);
+  BLE.addService(letterSenderService);
 
   // Bluetooth LE connection handlers.
   BLE.setEventHandler(BLEConnected, onBLEConnected);
@@ -186,6 +187,9 @@ void setup()
   }
 }
 
+
+
+/********************************* LOOP FUNCTION *********************************/
 void loop()
 {
   BLEDevice central = BLE.central();
