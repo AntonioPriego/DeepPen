@@ -75,26 +75,6 @@ namespace {
     eDone    = 2,
   };
 
-  // Create an area of memory to use for input, output, and intermediate arrays.
-  // The size of this will depend on the model you're using, and may need to be
-  // determined by experimentation.
-  constexpr int kTensorArenaSize = 30 * 1024;
-  uint8_t tensor_arena[kTensorArenaSize];
-
-  tflite::ErrorReporter* error_reporter = nullptr;
-  const tflite::Model* model = nullptr;
-  tflite::MicroInterpreter* interpreter = nullptr;
-
-  void SetupIMU() {
-
-    // Make sure we are pulling measurements into a FIFO.
-    // If you see an error on this line, make sure you have at least v1.1.0 of the
-    // Arduino_LSM9DS1 library installed.
-    IMU.setContinuousMode();
-
-    acceleration_sample_rate = IMU.accelerationSampleRate();
-    gyroscope_sample_rate = IMU.gyroscopeSampleRate();
-  }
 
   int ReadAccelerometerAndGyroscope(int* new_accelerometer_samples, int* new_gyroscope_samples) {
     // Keep track of whether we stored any new data
@@ -338,11 +318,11 @@ namespace {
     return is_moving;
   }
 
-  void UpdateStroke(int new_samples, bool* done_just_triggered) {
+  void UpdateStroke(int new_samples, bool* just_letter_detected) {
     constexpr int minimum_stroke_length = moving_sample_count + 10;
     constexpr float minimum_stroke_size = 0.2f;
 
-    *done_just_triggered = false;
+    *just_letter_detected = false;
 
     for (int i = 0; i < new_samples; ++i) {
       const int current_head = (new_samples - (i + 1));
@@ -376,8 +356,8 @@ namespace {
     
       // Only recalculate the full stroke if it's needed.
       const bool draw_last_point = ((i == (new_samples -1)) && (*stroke_state == eDrawing));
-      *done_just_triggered = ((old_state != eDone) && (*stroke_state == eDone));
-      if (!(*done_just_triggered || draw_last_point)) {
+      *just_letter_detected = ((old_state != eDone) && (*stroke_state == eDone));
+      if (!(*just_letter_detected || draw_last_point)) {
         continue;
       }
 
@@ -478,12 +458,12 @@ namespace {
       }
       
       // If the stroke is too small, cancel it.
-      if (*done_just_triggered) {
+      if (*just_letter_detected) {
         const float x_range = (x_max - x_min);
         const float y_range = (y_max - y_min);
         if ((x_range < minimum_stroke_size) &&
           (y_range < minimum_stroke_size)) {
-          *done_just_triggered = false;
+          *just_letter_detected = false;
           *stroke_state = eWaiting;
           *stroke_transmit_length = 0;
           stroke_length = 0;

@@ -12,7 +12,7 @@
 
 namespace {
   constexpr int kFixedPoint = 256;
-  
+    
   int32_t MulFP(int32_t a, int32_t b) {
     return (a * b) / kFixedPoint;
   }
