@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: proyecto.aux
+The style file: plain.bst
+Database file #1: bibliografia.bib
+Warning--empty journal in genAd
+Warning--empty journal in McCulloch
+Warning--empty journal in Rosenblatt
+Warning--empty journal in aiayn
+You've used 41 entries,
+            2118 wiz_defined-function locations,
+            660 strings with 8495 characters,
+and the built_in function-call counts, 8962 in all, are:
+= -- 818
+> -- 377
+< -- 0
++ -- 160
+- -- 116
+* -- 296
+:= -- 1531
+add.period$ -- 123
+call.type$ -- 41
+change.case$ -- 179
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 309
+empty$ -- 883
+format.name$ -- 116
+if$ -- 1923
+int.to.chr$ -- 0
+int.to.str$ -- 41
+missing$ -- 8
+newline$ -- 208
+num.names$ -- 82
+pop$ -- 337
+preamble$ -- 1
+purify$ -- 140
+quote$ -- 0
+skip$ -- 321
+stack$ -- 0
+substring$ -- 208
+swap$ -- 37
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 160
+warning$ -- 4
+while$ -- 82
+width$ -- 43
+write$ -- 373
+(There were 4 warnings)

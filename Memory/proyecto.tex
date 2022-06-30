@@ -1,0 +1,209 @@
+\documentclass[11pt, a4paper]{book}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[utf8]{inputenc}
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage{listings} % para insertar código con formato similar al editor
+\usepackage[spanish, es-tabla]{babel} % Selecciona el español para palabras introducidas automáticamente, p.ej. "septiembre" en la fecha y especifica que se use la palabra Tabla en vez de Cuadro
+\usepackage{url} % ,href} %para incluir URLs e hipervínculos dentro del texto (aunque hay que instalar href)
+\usepackage{graphics,graphicx, float} %para incluir imágenes y colocarlas
+\usepackage[gen]{eurosym} %para incluir el símbolo del euro
+\usepackage{cite} %para incluir citas del archivo <nombre>.bib
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{charter}
+\setcounter{tocdepth}{4}    %para mostrar en el índice hasta subsubsecciones
+\setcounter{secnumdepth}{3} %para mostrar numerado hasta subsubsecciones
+
+
+\usepackage[Lenny]{fncychap}
+\setlength{\topmargin}{-22pt}
+\setlength{\footskip}{130pt}
+
+
+%\setlength{\parindent}{0cm} % Anular sangría
+
+\usepackage[table,xcdraw]{xcolor}
+\hypersetup{
+	colorlinks=true,	% false: boxed links; true: colored links
+	linkcolor=black,	% color of internal links
+	urlcolor=cyan		% color of external links
+}
+\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\lmodern}
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead[L]{} % Empty left header
+\fancyhead[C]{} % Empty center header
+\fancyhead[R]{Antonio Priego Raya} % My name
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+%\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{1pt} % Customize the height of the header
+
+
+% Sección definición estilo de código
+\usepackage{color}
+\definecolor{minegro}{rgb}{0.1,0.1,0.1}
+\definecolor{mitexto}{rgb}{0.18,0.25,0.25}
+\definecolor{migris}{rgb}{0.39,0.39,0.39}
+\definecolor{miverde}{rgb}{0.05,0.75,0.65}
+\definecolor{minaranja}{rgb}{1,0.41,0.05}
+\definecolor{fondo}{rgb}{0.97,0.97,0.97}
+
+\definecolor{gray97}{gray}{.97}
+\definecolor{gray75}{gray}{.75}
+\definecolor{gray45}{gray}{.45}
+\definecolor{gray30}{gray}{.94}
+
+\lstset {
+	language         = C++,
+	basicstyle       = \footnotesize\sffamily\color{minegro},
+	backgroundcolor  = \color{fondo},
+	commentstyle     = \color{migris},
+	frame            = single,
+	numbers          = left,
+	numbersep        = 5pt,
+    numberstyle      = \scriptsize\color{migris},
+	keywordstyle     = \color{miverde},
+	showspaces       = false,
+	showstringspaces = false,
+	stringstyle      = \color{minaranja},
+	tabsize          = 2,
+	xleftmargin      = 18pt,
+    columns          = flexible
+}
+
+
+% Sección definición de márgenes de capítulos
+\newenvironment{mimargen}[2]{
+\begin{list}{}{
+	\setlength{\topsep}{0pt}
+	\setlength{\leftmargin}{#1}
+	\setlength{\rightmargin}{#2}
+	\setlength{\itemindent}{\parindent}
+}
+\item[]}{\end{list}}
+
+\usepackage{tcolorbox}       % Para el uso de recuadros
+\tcbuselibrary{listingsutf8}
+\usepackage{wrapfig}
+% Cuadro para teoría
+\newtcolorbox[auto counter, number within=section]{teoria}[2][]
+{colback=green!3!white,colframe=green!25!white!75!black,
+fonttitle=\bfseries, title=Teoría~\thetcbcounter: #2,#1}
+
+% Cuadro para teoría
+\newtcolorbox[auto counter, number within=section]{problemas}[2][]
+{colback=red!3!white,colframe=red!25!white!75!black,
+fonttitle=\bfseries, title=Problemas~\thetcbcounter: #2,#1}
+
+% Formato secciones
+\usepackage{titlesec}
+\titleformat{\section}
+  {\fontfamily{pbk}\selectfont\Large}
+  {\thesection}
+  {1em}
+  {}
+\titleformat{\subsection}
+  {\fontfamily{pbk}\selectfont\large}
+  {\thesubsection}
+  {1em}
+  {}
+\titleformat{\subsubsection}
+  {\fontfamily{pbk}\selectfont\normalsize}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+% Comienzo de documento
+\begin{document}
+\color{mitexto}
+
+	% Plantilla portada UGR
+	\input{portada/portada}
+
+	% Plantilla prefacio UGR
+	\input{prefacios/prefacio}
+
+	
+	% Índice de contenidos
+	\newpage
+	\tableofcontents
+
+	% Índice de imágenes y tablas
+	\newpage
+	\listoffigures
+
+	% Introducción 
+	\input{capitulos/01_Introduccion}
+
+	% Descripción del problema y hasta donde se llega
+	%\input{capitulos/descripcion}
+
+	% Análisis del problema
+	% 1. Análisis de requisitos
+	% 2. Análisis de las soluciones
+	% 3. Solucion propuesta
+	% 4. Análisis de seguridad
+	%\input{capitulos/analisis}
+
+	% Estado del arte
+	\input{capitulos/02_Estado_del_arte.tex}
+
+	% Análisis de requisitos
+	\input{capitulos/03_Analisis_de_requisitos.tex}
+
+	% Skectch cargado en la placa
+	\input{capitulos/04_Microcontrolador.tex}
+
+	% Diseño y entrenamiento de la red neuronal
+	\input{capitulos/05_Red_neuronal.tex}
+
+	% Diseño interfaz de usuario 
+	\input{capitulos/06_Interfaz_de_usuario.tex}
+
+	% Entrenamiento
+	%\input{capitulos/entrenamiento.tex}
+
+	% Notas
+	%\input{capitulos/apendice.tex}
+
+	% Notas
+	%\input{capitulos/intento_Harvard.tex}
+
+	% Herramientas
+	\input{capitulos/07_Herramientas.tex}
+
+	% Desarrollo bajo sprints: 
+	% 	1. Permitir registros y login de usuarios
+	% 	2. Desarrollo del sistema de incidencias
+	% 	3. Desarrollo del sistema de denuncias administrativas y accidentes
+	% 	4. Desarrollo del sistema de croquis
+	%   5. Instalación de la aplicación de manera automática
+	%\input{capitulos/implementacion}
+
+	% Apéndice
+	\input{capitulos/08_Apendice}
+
+	% Validación
+	\input{capitulos/09_Validacion.tex}
+
+	% Trabajos futuros
+	\input{capitulos/10_Trabajos_futuros.tex}
+
+	% Conclusiones
+	\input{capitulos/11_Conclusiones}
+
+
+	\newpage
+	\bibliography{bibliografia}
+	\bibliographystyle{plain}
+	
+\end{document}
+
