@@ -62,7 +62,7 @@ void onRxCharValueUpdate(BLEDevice central, BLECharacteristic characteristic) {
 
 
 /********************************* SETUP FUNCTION *********************************/
-// Setting the area of memory reserved to tensor input-output actions.
+// Setting the area of memory reserved to tensor input-output actions
 constexpr int TensorAreaSize = 30 * 1024;
 uint8_t tensor_area[TensorAreaSize];
 
@@ -100,7 +100,7 @@ void setup()
     while (true);
   }
 
-  // Create BLE settings, service and characteristics.
+  // Create BLE settings, service and characteristics
   BLE.setLocalName(deviceName);
   BLE.setAdvertisedService(letterSenderService);
   letterSenderService.addCharacteristic(rxChar);
@@ -152,7 +152,7 @@ void setup()
   interpreter = &static_interpreter;
   interpreter->AllocateTensors();
 
-  // Initialize pins as an output
+  // Initialize led pins as an output
   pinMode(LED_RED  , OUTPUT);
   pinMode(LED_BLUE , OUTPUT);
   pinMode(LED_GREEN, OUTPUT);  
@@ -164,6 +164,7 @@ void setup()
 /********************************* LOOP FUNCTION *********************************/
 void loop()
 {
+  // Led green during run
   digitalWrite(LED_PWR, HIGH);
   digitalWrite(LED_GREEN, HIGH);
   
@@ -182,6 +183,7 @@ void loop()
 
   
   if (!IMU.accelerationAvailable() && !IMU.gyroscopeAvailable()) {
+    // Led red when something is wrong
     digitalWrite(LED_RED, HIGH);
     return;
   }
@@ -234,13 +236,17 @@ void loop()
     }
 
     const char *recognized = foundLabel  (max_index);
-    char letra             = foundLabelBT(max_index);
+    char letter            = foundLabelBT(max_index);
 
 
-    txChar.writeValue(letra);
+    // Send letter via BLE characteristic
+    txChar.writeValue(letter);
     
-    //TF_LITE_REPORT_ERROR(error_reporter, "Caracter detectado: %s (%d)", recognized, max_score);
+    //Send letter via serial port
     TF_LITE_REPORT_ERROR(error_reporter, "%s", recognized);
+    
+
+    // Led blue during 800ms after letter recognition
     digitalWrite(LED_BLUE , HIGH);
     digitalWrite(LED_GREEN, LOW);
     delay(800);
