@@ -21,9 +21,9 @@
 /************************************* BLE SETUP *************************************/
 // Device properties
 const char* deviceName           = "SmartPen";
-const char* serviceUuid          = "00001101-0000-1000-8000-0080smartpen";
-const char* rxCharacteristicUuid = "00001142-0000-1000-8000-0080smartpen";
-const char* txCharacteristicUuid = "00001143-0000-1000-8000-0080smartpen";
+const char* serviceUuid          = "00001101-0000-1000-8000-00805f9b34fb";
+const char* rxCharacteristicUuid = "00001142-0000-1000-8000-00805f9b34fb";
+const char* txCharacteristicUuid = "00001143-0000-1000-8000-00805f9b34fb";
 
 // BLE service 
 BLEService letterSenderService(serviceUuid);
@@ -167,7 +167,7 @@ void loop()
   // Led green during run
   digitalWrite(LED_PWR, HIGH);
   digitalWrite(LED_GREEN, HIGH);
-  
+
   // Listen for BLE peripherals to connect
   BLEDevice central = BLE.central();
   
@@ -244,13 +244,6 @@ void loop()
     
     //Send letter via serial port
     TF_LITE_REPORT_ERROR(error_reporter, "%s", recognized);
-    
-
-    // Led blue during 800ms after letter recognition
-    digitalWrite(LED_BLUE , HIGH);
-    digitalWrite(LED_GREEN, LOW);
-    delay(800);
-    digitalWrite(LED_BLUE , LOW);
   }
   else if (rxSignal) { // Not just triggered and rxSignal received
     txChar.writeValue('.');
