@@ -4,48 +4,50 @@ The top-level auxiliary file: proyecto.aux
 The style file: plain.bst
 Database file #1: bibliografia.bib
 Warning--empty journal in genAd
+Warning--empty journal in hinton
 Warning--empty journal in McCulloch
+Warning--empty journal in ray
 Warning--empty journal in Rosenblatt
 Warning--empty journal in aiayn
-You've used 41 entries,
+You've used 49 entries,
             2118 wiz_defined-function locations,
-            660 strings with 8495 characters,
-and the built_in function-call counts, 8962 in all, are:
-= -- 818
-> -- 377
+            701 strings with 9658 characters,
+and the built_in function-call counts, 10708 in all, are:
+= -- 978
+> -- 450
 < -- 0
-+ -- 160
-- -- 116
-* -- 296
-:= -- 1531
-add.period$ -- 123
-call.type$ -- 41
-change.case$ -- 179
++ -- 191
+- -- 138
+* -- 358
+:= -- 1833
+add.period$ -- 147
+call.type$ -- 49
+change.case$ -- 213
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 309
-empty$ -- 883
-format.name$ -- 116
-if$ -- 1923
+cite$ -- 55
+duplicate$ -- 376
+empty$ -- 1049
+format.name$ -- 138
+if$ -- 2293
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 8
-newline$ -- 208
-num.names$ -- 82
-pop$ -- 337
+int.to.str$ -- 49
+missing$ -- 12
+newline$ -- 248
+num.names$ -- 98
+pop$ -- 400
 preamble$ -- 1
-purify$ -- 140
+purify$ -- 167
 quote$ -- 0
-skip$ -- 321
+skip$ -- 382
 stack$ -- 0
-substring$ -- 208
-swap$ -- 37
+substring$ -- 249
+swap$ -- 43
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 160
-warning$ -- 4
-while$ -- 82
-width$ -- 43
-write$ -- 373
-(There were 4 warnings)
+type$ -- 190
+warning$ -- 6
+while$ -- 98
+width$ -- 51
+write$ -- 446
+(There were 6 warnings)

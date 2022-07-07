@@ -1,0 +1,75 @@
+\chapter{Encapsulado\label{encapsulado}}
+Para esta parte, dada la menor relevancia al poner en contexto todo el proyecto, se
+contará con poco tiempo. Esto supondrá decisiones tomadas con esta limitación,
+\section{Herramientas utilizadas}
+Para la creación de los modelos 3D del encapsulado, se han utilizado principalmente
+dos herramientas distintas para modelar y una para imprimir.
+
+Para el modelado se utilizará \textit{Blender}, un software de modelado muy potente
+y lleno de posibilidades, aunque considerablemente complejo al empezar y que utilicé
+para no limitar el modelo a algo simple. Fuera de lo
+planificado, también se ha utilizado \textit{SketchUp}.
+
+Para la impresión, de la que yo no me encargaré, se hará uso del \textit{slicer}
+(software para impresión 3D) \textit{Ultimaker Cura}.
+
+\section{Implementación}
+Por la limitación de tiempo descrita al comienzo de este capítulo \ref{encapsulado},
+no se dispone de tiempo para una fase de diseño previa a implementar el modelo.
+El modelo se ha construirá con las especificaciones más básicas en mente.
+
+El encapsulado debe contener de forma firme el microcontrolador para que no se mueva,
+ya que se espera que el usario lo mueva con determinación para trazar una letra. Por
+otro lado, también será necesario incorporar una batería para alimentarm sin conexión
+directa al ordenador, el dispositivo. Con estas dos únicas limitaciones y con una forma
+semejante a la de un bolígrafo, se construirá el modelo.
+
+El modelo estará dividido en partes por motivos de la logística de la impresión, tanto
+por comodidad para tratar con la persona que lo imprimirá, como por cuestiones de que los
+modelos deben guardar ciertas limitaciones estructurales para poder imprimirse. Por ejemplo,
+en lugar de imprimir el
+\href{https://github.com/AntonioPriego/SmartPen/tree/main/SmartPenModel/Components/cilindroBajo}{cilindroBajo}
+ya con la 
+\href{https://github.com/AntonioPriego/SmartPen/tree/main/SmartPenModel/Components/punta}{punta},
+para aunar toda la parte inferior del encapsulado, se imprimen por separado ya que se necesita de
+una base estable para la impresión que no se lograría con los dos elementos unidos.
+
+\begin{problemas}{Modelo incompatible con la impresión}
+    \color{mitexto}
+    Durante la impresión la impresión surgieron varios problemas, la mayoría menores,
+    sin embargo hubo uno se resistió aunque no entrañaba realmente ninguna complejidad.
+    Este era que una de las partes del encapsulado, el
+    \href{https://github.com/AntonioPriego/SmartPen/tree/main/SmartPenModel/Components/cilindroBajo}{cilindroBajo},
+    la parte en contendrá el microcontrolador, mostraba en el \textit{slicer} (software
+    para la impresión), un error de formato en la base. Este error finalmente se debía
+    a un grosor por debajo del mínimo. Problema ocasionado por haber construido
+    a partir del escalado vertical de otro componente
+    (\href{https://github.com/AntonioPriego/SmartPen/tree/main/SmartPenModel/Components/cilindroAlto}{cilindroAlto});
+    al escalar verticalmente, el grosor de la pared del modelo, se conserva, sin embargo
+    no ocurre lo mismo para la base, disminuyendo su grosor y provocando este problema.
+    La solución fue simplemente redefinir el grosor de la base.
+\end{problemas}
+
+Con todos los componentes impresos, surge un problema con la batería con la que contaba
+para incorporar en el encapsulado
+
+\begin{problemas}{Alimentación intermitente de la batería}
+    \color{mitexto}
+    La alimentación resultaba deficiente, por lo tanto solo pude hacerme con
+    otra batería y adaptar el encapsulado a este nuevo componente.
+    Para poder crear el modelo complementario para adaptar la batería, hice uso
+    de \textit{SketchUp}, un software muchísimo más simple que \textit{Blender};
+    esta sencillez ha sido determinante porque el tiempo era muy restrictivo en ese momento.
+    Resultando en el componente
+    \href{https://github.com/AntonioPriego/SmartPen/tree/main/SmartPenModel/Components/slotBateria}{slotBatería},
+    para poder incluir una pila de 9V recargable. La alimentación con esta pila, al ser de más
+    de 5V, deberá ser vía pines de la placa, que admiten hasta 21V.
+\end{problemas}
+
+Con esta nueva batería, se logra una autonomía de más de dos días en el primer ciclo
+de carga. Según el fabricante, los primeros ciclos de carga suelen ser los que menor
+energía suministran, por lo que podría incluso mejorar la duración.
+
+En los Apéndices \ref{modelos} y \ref{encapsulado} pueden encontrarse ilustrados,
+respectivamente, los modelos creados y el resultado final del encapsulado con
+todo el hardware integrado.

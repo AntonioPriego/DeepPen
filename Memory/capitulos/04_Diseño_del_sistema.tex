@@ -1,0 +1,36 @@
+\chapter{Diseño del sistema}
+Para poder trabajar con objetivos claros, lo mejor es definir la estructura
+de nuestro proyecto, constreñir los elementos que constituirán el producto
+que se trata de alcanzar.
+
+\section{Estructuración del diseño del sistema}
+Lo primero es identificar los elementos. Es evidente que nuestro
+dispositivo estará integrado en un encapsulado, por lo tanto, cuando se haga
+referencia al \textit{SmartPen}, se estará haciendo alusión al propio encapsulado
+que contiene toda la electrónica agregada. Dicha electrónica consta de dos partes
+físicamente separadas: el microcontrolador y la batería que lo alimentará
+cuando se haga uso de su característica inalámbrica (bluetooth), dotándolo de
+la autonomía necesaria. Nuestro \textit{SmartPen} necesitará de un equipo en el
+que mostrar las funcionalidades que ofrece el producto, podría tratarse de, por
+ejemplo un smartphone, pero en este caso se ha optado por hacerlo en un ordenador
+para agilizar el desarrollo. El ordenador es una herramienta que será utilizada
+no solo cuando se concluya el desarrollo, como interfaz para el \textit{SmartPen},
+sino como herramienta para la propia producción de todo el software requerido
+durante el desarrollo del proyecto:
+interfaz de usuario, firmware del micrococontrolador y creación de la red
+neuronal. A su vez, el firmware hará uso de varios elementos clave para su
+funcionamiento; ya que la red neuronal tomará como entrada imágenes, se
+necesitará de una parte del firmware destinada a rasterizar el movimiento,
+movimiento que por otro lado deberá registrarse por medio de los sensores
+presentes en el microcontrolador. Finalmente, el dispositivo requerirá
+según lo especificado (sección \ref{reqNF}), de mínimo dos canales de
+comunicación uno inalámbrico y otro por cable. Canales de comunicación
+que no solo se emplearán con fines de conexión con la interfaz de usuario,
+sino que también servirán para generar las muestras con las que se
+desarrollará (validación, entrenamiento y testeo) la red neuronal.
+
+\begin{figure}[]
+    \centering
+    \includegraphics[angle=90,width=1\textwidth]{capturas/EstructuraDiseño.png}\\[-0,20cm]
+    \caption{Esquema de la estructura del diseño del sistema}
+\end{figure}

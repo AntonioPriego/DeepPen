@@ -1,9 +1,14 @@
 \begin{thebibliography}{10}
 
+\bibitem{microlearn}
+Adarsh1001.
+\newblock Repositorio micro-learn.
+\newblock \\\url{https://github.com/adarsh1001/micro-learn}.
+
 \bibitem{andriyadimw}
-andriyadi.
+Andriyadi.
 \newblock andriyadi magic wand repository.
-\newblock \url{https://github.com/andriyadi/MagicWand-TFLite-Arduino}.
+\newblock \\\url{https://github.com/andriyadi/MagicWand-TFLite-Arduino}.
 
 \bibitem{BLEAndroid}
 Developers Android.
@@ -11,11 +16,11 @@ Developers Android.
 \newblock
   \url{https://developer.android.com/guide/topics/connectivity/bluetooth-le?hl=es-419}.
 
-\bibitem{lsm9ds1}
+\bibitem{project-hub}
 Arduino.
-\newblock Biblioteca arduino\_lsm9ds1.
+\newblock Project hub.
 \newblock
-  \url{https://github.com/arduino-libraries/Arduino_LSM9DS1/blob/master/src/LSM9DS1.cpp}.
+  \url{https://create.arduino.cc/projecthub?by=part&part_id=108462&sort=trending}.
 
 \bibitem{imuteoria}
 Aprendiendo Arduino.
@@ -26,17 +31,22 @@ Aprendiendo Arduino.
 Bluetooth.
 \newblock A developer’s guide to bluetooth technology.
 \newblock
-  \url{https://www.bluetooth.com/blog/a-developers-guide-to-bluetooth/}.
+  \\\url{https://www.bluetooth.com/blog/a-developers-guide-to-bluetooth/}.
 
 \bibitem{sancho}
 Fernando~Sancho Caparrini.
 \newblock Redes neuronales: una visión superficial.
-\newblock \url{http://www.cs.us.es/~fsancho/?e=72}.
+\newblock \\\url{http://www.cs.us.es/~fsancho/?e=72}.
 
 \bibitem{CloudMl}
 CloudML.
 \newblock Cloudml webpage.
 \newblock \url{https://cloudml.io/}.
+
+\bibitem{carBTQT}
+QT~Community.
+\newblock Codereview de qt-project.
+\newblock \url{https://codereview.qt-project.org/c/qt/qtconnectivity/+/233087}.
 
 \bibitem{genAd}
 Antonia Creswell, Tom White, Vincent Dumoulin, Kai Arulkumaran, Biswa Sengupta,
@@ -55,15 +65,25 @@ DeepMind.
 \newblock Alphago webpage.
 \newblock \url{https://www.deepmind.com/research/highlighted-research/alphago}.
 
+\bibitem{gplv3}
+Free~Software Foundation.
+\newblock {GNU} {G}eneral {P}ublic {L}icense.
+\newblock \url{http://www.gnu.org/licenses/gpl.html}.
+
+\bibitem{hinton}
+Hinton G.E., Osindero S., and Teh Y.
+\newblock Movies of the neural network generating and recognizing digits.
+\newblock 2006.
+
 \bibitem{ghcopilot}
 GitHub.
 \newblock Github copilot webpage.
-\newblock \url{https://github.com/features/copilot/}.
+\newblock \\\url{https://github.com/features/copilot/}.
 
 \bibitem{EdgeMl}
 GitHub/Microsoft.
-\newblock Edgeml webpage.
-\newblock \url{https://microsoft.github.io/EdgeML/}.
+\newblock {E}dge{ML} webpage.
+\newblock \\\url{https://microsoft.github.io/EdgeML/}.
 
 \bibitem{Aurelien}
 Aurélien Géron.
@@ -72,69 +92,37 @@ Aurélien Géron.
 \newblock O'Reilly, 2019.
 
 \bibitem{geo}
-iars.geo.
+Iars.geo.
 \newblock Breve historia de las redes neuronales artificiales.
 \newblock
-  \url{https://steemit.com/spanish/@iars.geo/breve-historias-de-las-redes-neuronales-artificiales-articulo-1}.
-
-\bibitem{activation}
-Keras.
-\newblock Activation class.
-\newblock \url{https://keras.io/api/layers/core_layers/activation/}.
-
-\bibitem{bnorm}
-Keras.
-\newblock Batchnormalization class.
-\newblock
-  \url{https://keras.io/api/layers/normalization_layers/batch_normalization/}.
-
-\bibitem{conv2d}
-Keras.
-\newblock Conv2d class.
-\newblock \url{https://keras.io/api/layers/convolution_layers/convolution2d/}.
-
-\bibitem{dense}
-Keras.
-\newblock Dense class.
-\newblock \url{https://keras.io/api/layers/core_layers/dense/}.
-
-\bibitem{dropout}
-Keras.
-\newblock Dropout class.
-\newblock \url{https://keras.io/api/layers/regularization_layers/dropout/}.
+  \\\url{https://steemit.com/spanish/@iars.geo/breve-historias-de-las-redes-neuronales-artificiales-articulo-1}.
 
 \bibitem{keras}
 Keras.
 \newblock Keras webpage.
 \newblock \url{https://keras.io/}.
 
-\bibitem{rescaling}
-Keras.
-\newblock Rescaling class.
-\newblock
-  \url{https://keras.io/api/layers/preprocessing_layers/image_preprocessing/rescaling/}.
-
-\bibitem{sequential}
-Keras.
-\newblock Sequential class.
-\newblock \url{https://keras.io/api/models/sequential/}.
-
 \bibitem{ladvien}
 Ladvien.
 \newblock Repository named 'arduino\_ble\_sense'.
 \newblock \url{https://github.com/Ladvien/arduino_ble_sense}.
 
+\bibitem{RNestru}
+Alex Lenail.
+\newblock Creación de esquemas de redes neuronales.
+\newblock \url{http://alexlenail.me/NN-SVG/index.html}.
+
 \bibitem{nlp}
 Ben Lutkevich.
-\newblock Natural language processing (nlp).
+\newblock Natural language processing ({NLP}).
 \newblock
-  \url{https://www.techtarget.com/searchenterpriseai/definition/natural-language-processing-NLP}.
+  \\\url{https://www.techtarget.com/searchenterpriseai/definition/natural-language-processing-NLP}.
 
 \bibitem{transformers}
 Maxime.
 \newblock What is a transformer?
 \newblock
-  \url{https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04}.
+  \\\url{https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04}.
 
 \bibitem{McCulloch}
 Warren~S. McCulloch and Walter Pitts.
@@ -150,7 +138,13 @@ Andreas~C. Müller and Sarah Guido.
 Na8.
 \newblock Breve historia de las redes neuronales artificiales.
 \newblock
-  \url{https://www.aprendemachinelearning.com/breve-historia-de-las-redes-neuronales-artificiales/}.
+  \\\url{https://www.aprendemachinelearning.com/breve-historia-de-las-redes-neuronales-artificiales/}.
+
+\bibitem{nerfs}
+Jonathan~Stephens (Nvidia).
+\newblock Getting started with nvidia instant nerfs.
+\newblock
+  \url{https://developer.nvidia.com/blog/getting-started-with-nvidia-instant-nerfs/}.
 
 \bibitem{openai}
 OpenAI.
@@ -163,21 +157,58 @@ Peltarion.
 \newblock
   \url{https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/blocks/global-average-pooling-2d}.
 
+\bibitem{bledoc}
+QT.
+\newblock Documentación {B}luetooth {LE}.
+\newblock \\\url{https://doc.qt.io/qt-6/qtbluetooth-le-overview.html}.
+
+\bibitem{signalsQT}
+QT.
+\newblock Documentación de señales y slots en qt.
+\newblock \url{https://doc.qt.io/qt-6/signalsandslots.html}.
+
+\bibitem{qthreaddoc}
+QT.
+\newblock Documentación {QT}hread.
+\newblock \\\url{https://doc.qt.io/qt-6/threads-technologies.html}.
+
+\bibitem{ejBLE}
+QT.
+\newblock Implementaciones qt para demostrar el uso de ble.
+\newblock
+  \url{https://doc.qt.io/qt-6/qtbluetooth-lowenergyscanner-example.html}.
+
+\bibitem{ray}
+Partha~Pratim Ray.
+\newblock A review on tinyml: State-of-the-art and prospects.
+\newblock 2022.
+
 \bibitem{Rosenblatt}
 F.~Rosenblatt.
 \newblock The perceptron, a perceiving and recognizing automaton project para.
 \newblock 1957.
 
-\bibitem{nerfs}
-Jonathan Stephens(Nvidia).
-\newblock Getting started with nvidia instant nerfs.
+\bibitem{permBTQT}
+Sierdzio.
+\newblock Foro qt.
 \newblock
-  \url{https://developer.nvidia.com/blog/getting-started-with-nvidia-instant-nerfs/}.
+  \url{https://forum.qt.io/topic/114503/missing-cap_net_admin-permission/2}.
+
+\bibitem{salII}
+Talent.com.
+\newblock Salario medio de un ingeniero informático en españa en 2022.
+\newblock \url{https://es.talent.com/salary?job=ingeniero+inform%C3%A1tico}.
 
 \bibitem{tf-xxd}
 TensorFlow.
 \newblock Build convert.
 \newblock \url{https://www.tensorflow.org/lite/microcontrollers/build_convert}.
+
+\bibitem{github-magicwand}
+TensorFlow.
+\newblock Github ejemplo magic\_wand de tensorflow.
+\newblock
+  \url{https://github.com/tensorflow/tflite-micro/tree/main/tensorflow/lite/micro/examples/magic_wand}.
 
 \bibitem{intro-tensor-micro}
 TensorFlow.
@@ -186,8 +217,8 @@ TensorFlow.
   \url{https://www.tensorflow.org/lite/microcontrollers/get_started_low_level}.
 
 \bibitem{tinyMl}
-tinyML.
-\newblock tinyml webpage.
+TinyML.
+\newblock Tinyml webpage.
 \newblock \url{https://www.tinyml.org/}.
 
 \bibitem{BLEOreilly}
@@ -207,6 +238,12 @@ Pete Warden.
 \newblock Pete warden magic wand repository.
 \newblock \url{https://github.com/petewarden/magic_wand}.
 
+\bibitem{TinyML-PW}
+Pete Warden and Daniel Situnayake.
+\newblock {\em TinyML: Machine Learning with TensorFlow Lite on Arduino and
+  Ultra-Low-Power Microcontrollers}.
+\newblock O'Reilly, 2019.
+
 \bibitem{mcs48}
 Wikipedia.
 \newblock Intel mcs-48.
@@ -221,5 +258,11 @@ Wikipedia.
 Wikipedia.
 \newblock Multilayer perceptron.
 \newblock \url{https://en.wikipedia.org/wiki/Multilayer_perceptron}.
+
+\bibitem{orhan}
+Orhan~G. Yalçin.
+\newblock Image classification in 10 minutes with {MNIST} dataset.
+\newblock
+  \url{https://towardsdatascience.com/image-classification-in-10-minutes-with-mnist-dataset-54c35b77a38d}.
 
 \end{thebibliography}

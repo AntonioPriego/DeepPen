@@ -1,51 +1,89 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Introducción y Motivación}{17}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Antecedentes y estado actual}{19}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Redes neuronales}{19}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Microcontroladores}{22}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Integración de redes neuronales en microcontroladores}{23}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Análisis de requisitos}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Requisitos funcionales y no funcionales}{25}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{25}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{25}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Análisis de requisitos hardware}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Planificación y presupuestación}{26}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Planificación}{26}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Presupuesto}{28}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Microcontrolador}{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Planificación}{29}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Elección del microcontrolador}{29}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Elección de las tecnologías}{30}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Diseño}{31}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Estructura del sketch}{31}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Servicio BLE}{32}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Implementación}{33}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Configuración BLE \textsuperscript {\cite {ladvien}}}{34}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Función 'setup()'\textsuperscript {\cite {andriyadimw,petewardenmw}}}{34}{subsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.2.1}BLE e IMU setup}{35}{subsubsection.4.3.2.1}%
-\contentsline {subsubsection}{\numberline {4.3.2.2}Setup de nuestro modelo}{35}{subsubsection.4.3.2.2}%
-\contentsline {subsection}{\numberline {4.3.3}Función 'loop()'\textsuperscript {\cite {andriyadimw,petewardenmw}}}{36}{subsection.4.3.3}%
-\contentsline {chapter}{\numberline {5}Red Neuronal}{39}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Diseño}{39}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Implementación}{41}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Preparativos}{41}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Entrenamiento}{44}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Testeo}{44}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Transformación a modelo cuantizado}{44}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Comparación de modelos}{44}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Integración en el sketch}{44}{subsection.5.2.6}%
-\contentsline {chapter}{\numberline {6}Interfaz de usuario}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Diseño}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Implementación}{46}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Herramientas}{47}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Apéndice}{49}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Apéndice de soluciones en implementación}{49}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Si la placa deja de ser detectada}{49}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}El modelo de datos entrenado no responde\cite {intro-tensor-micro}}{49}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Error durante el entrenamiento}{50}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Error al cambiar el tamaño de las secuencias de movimientos}{51}{subsection.8.1.4}%
-\contentsline {subsection}{\numberline {8.1.5}Valores nulos al leer por Bluetooth QT}{52}{subsection.8.1.5}%
-\contentsline {section}{\numberline {8.2}Apéndice teórico}{52}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Validación}{53}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Trabajos futuros}{55}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Conclusiones}{57}{chapter.11}%
+\contentsline {chapter}{\numberline {1}Introducción y Motivación}{19}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Antecedentes y estado actual}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Redes neuronales}{21}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Microcontroladores}{24}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Integración de redes neuronales en microcontroladores}{25}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Especificación del sistema}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Requisitos}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Requisitos funcionales}{27}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Requisitos no funcionales}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Especificación formal}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Especificación hardware}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Especificación software}{28}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Planificación y presupuestación}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Planificación}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Presupuesto}{31}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Diseño del sistema}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Estructuración del diseño del sistema}{33}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Microcontrolador}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Planificación}{35}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Elección del microcontrolador}{35}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Elección del entorno de desarrollo}{37}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Elección del \textit {framework} para \textit {Deep Learning}}{37}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Diseño}{37}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Estructura del firmware del controlador}{37}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Servicio \textit {Bluetooth}}{38}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Implementación}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Definición de parámetros de \textit {Bluetooth}}{40}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Función de configuración del firmware}{40}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Configuración \textit {Bluetooth} y de sensores}{40}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}Configuración para la red neuronal}{41}{subsubsection.5.3.2.2}%
+\contentsline {subsection}{\numberline {5.3.3}Función cíclica del firmware\textsuperscript {\cite {andriyadimw,petewardenmw}}}{42}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Red Neuronal}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Planificación}{45}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Elección de framework y librerías}{45}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Diseño de la red neuronal}{46}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Implementación}{48}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Preparativos}{48}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Entrenamiento}{49}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Testeo}{51}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Transformación a modelo cuantizado}{51}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Comparación de modelos generados}{52}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Integración en el microcontrolador}{52}{subsection.6.2.6}%
+\contentsline {section}{\numberline {6.3}Generación de muestras para el dataset}{52}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Interfaz de usuario}{53}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Motivación}{53}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Planificación}{53}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Elección de framework para interfaz gráfica}{53}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Diseño de la interfaz}{54}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Implementación}{55}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Traspaso del diseño a \textit {QT creator}}{55}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Configuración de la interfaz}{56}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Gestión de lectura del microcontrolador}{56}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Lectura de la característica \textit {Bluetooth Low Energy}}{56}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Lectura del \textit {puerto serie}}{57}{subsection.7.6.2}%
+\contentsline {chapter}{\numberline {8}Encapsulado}{59}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Herramientas utilizadas}{59}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Implementación}{59}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Validación}{61}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ajuste al presupuesto}{61}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Comprobación de objetivos cumplidos}{61}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Trabajos futuros y mejoras}{63}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Conclusiones}{65}{chapter.11}%
+\contentsline {chapter}{Apéndices}{71}{section*.16}%
+\contentsline {chapter}{\numberline {A}Microcontrolador}{71}{appendix.1.Alph1}%
+\contentsline {section}{\numberline {A.1}Resolver problemas de memoria}{71}{section.1.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Instalación de librerías en \textit {Arduino IDE}}{71}{section.1.Alph1.2}%
+\contentsline {section}{\numberline {A.3}Notificación de conexión \textit {Bluetooth} del firmware del microcontrolador}{71}{section.1.Alph1.3}%
+\contentsline {section}{\numberline {A.4}Definición de micro-operaciones en el firmware del microcontrolador}{72}{section.1.Alph1.4}%
+\contentsline {section}{\numberline {A.5}Cambiar la orientación de la placa}{72}{section.1.Alph1.5}%
+\contentsline {chapter}{\numberline {B}Red neuronal}{73}{appendix.1.Alph2}%
+\contentsline {section}{\numberline {B.1}Ajuste para poder utilizar el recolector de muestras de \textit {Pete Warden}\textsuperscript {\cite {petewardenmw}}}{73}{section.1.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Asignación incorrecta de índices en el recolector de muestras}{73}{section.1.Alph2.2}%
+\contentsline {section}{\numberline {B.3}El recolector de muestras elimina varias muestras al borrar una}{73}{section.1.Alph2.3}%
+\contentsline {section}{\numberline {B.4}Descripción de capas \textit {Keras} empleadas para la implementación de la red neuronal}{74}{section.1.Alph2.4}%
+\contentsline {section}{\numberline {B.5}Experimentación red neuronal}{76}{section.1.Alph2.5}%
+\contentsline {subsection}{\numberline {B.5.1}Diseño de la red neuronal}{76}{subsection.1.Alph2.5.1}%
+\contentsline {subsection}{\numberline {B.5.2}Entrenamiento de la red neuronal}{77}{subsection.1.Alph2.5.2}%
+\contentsline {chapter}{\numberline {C}Interfaz de usuario}{79}{appendix.1.Alph3}%
+\contentsline {section}{\numberline {C.1}Permisos uso del puerto del microcontrolador (Linux)}{79}{section.1.Alph3.1}%
+\contentsline {section}{\numberline {C.2}Acceso al puerto serie en QT (Linux)}{79}{section.1.Alph3.2}%
+\contentsline {section}{\numberline {C.3}Valores nulos al leer por \textit {Bluetooth} con \textit {QT}}{79}{section.1.Alph3.3}%
+\contentsline {section}{\numberline {C.4}Error de reconocimiento de imágenes en QT}{80}{section.1.Alph3.4}%
+\contentsline {section}{\numberline {C.5}Pérdida de valores de \textit {características}}{80}{section.1.Alph3.5}%
+\contentsline {section}{\numberline {C.6}Error de permisos al lanzar la interfaz de usuario (Linux)}{80}{section.1.Alph3.6}%
+\contentsline {section}{\numberline {C.7}Capturas de la interfaz de usuario}{81}{section.1.Alph3.7}%
+\contentsline {chapter}{\numberline {D}Encapsulado}{83}{appendix.1.Alph4}%
+\contentsline {section}{\numberline {D.1}Modelos 3D}{83}{section.1.Alph4.1}%
+\contentsline {section}{\numberline {D.2}Resultado de integrar todo en el encapsulado}{84}{section.1.Alph4.2}%

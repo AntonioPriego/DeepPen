@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.23)  30 JUN 2022 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.23)  7 JUL 2022 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.tex
-(/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.tex
+**/home/tony/Universidad/TFG/Memory/proyecto.tex
+(/home/tony/Universidad/TFG/Memory/proyecto.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
@@ -389,7 +389,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisrulewidth=\dimen173
 ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/charter.sty
 Package: charter 2005/04/12 PSNFSS-v9.2a (P.Dyballa) 
-) (/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count279
+\c@@ppsavesec=\count280
+\c@@ppsaveapp=\count281
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip57
 \mylen=\skip58
@@ -409,7 +423,7 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks24
 \minrowclearance=\skip64
 )
-\rownum=\count279
+\rownum=\count282
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -420,7 +434,7 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
  (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@headwidth=\skip65
@@ -472,14 +486,14 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@yd=\dimen185
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count280
-\c@pgf@countb=\count281
-\c@pgf@countc=\count282
-\c@pgf@countd=\count283
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count284
+\pgf@sys@id@count=\count287
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -490,21 +504,21 @@ File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count285
-\pgfsyssoftpath@bigbuffer@items=\count286
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen186
-\pgfmath@count=\count287
+\pgfmath@count=\count290
 \pgfmath@box=\box53
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count288
+\c@pgfmathroundto@lastzeros=\count291
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen187
@@ -534,7 +548,7 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box54
 \pgf@hbox=\box55
 \pgf@layerbox@main=\box56
-\pgf@picture@serial@count=\count289
+\pgf@picture@serial@count=\count292
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen261
@@ -555,8 +569,8 @@ File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen266
-\pgf@sys@shading@range@num=\count290
-\pgf@shadingcount=\count291
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -594,15 +608,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \@envbody=\toks37
 ) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
+\etb@tempcnta=\count295
 )
 \tcb@titlebox=\box59
 \tcb@upperbox=\box60
 \tcb@lowerbox=\box61
 \tcb@phantombox=\box62
-\c@tcbbreakpart=\count293
-\c@tcblayer=\count294
-\tcolorbox@number=\count295
+\c@tcbbreakpart=\count296
+\c@tcblayer=\count297
+\tcolorbox@number=\count298
 \tcb@temp=\box63
 \tcb@temp=\box64
 \tcb@temp=\box65
@@ -625,17 +639,17 @@ Library (tcolorbox): 'tcbprocessing.code.tex' version '4.22'
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count296
+\c@tcblisting=\count299
 ))) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen269
 \WF@size=\dimen270
-\c@WF@wrappedlines=\count297
+\c@WF@wrappedlines=\count300
 \WF@box=\box67
 \WF@everypar=\toks38
 Package: wrapfig 2003/01/31  v 3.6
 )
-\c@tcb@cnt@teoria=\count298
-\c@tcb@cnt@problemas=\count299
+\c@tcb@cnt@teoria=\count301
+\c@tcb@cnt@problemas=\count302
  (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \ttl@box=\box68
@@ -649,67 +663,71 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthfirst=\dimen275
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count300
+\l__kernel_color_stack_int=\count303
 \l__pdf_internal_box=\box69
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.aux
+) (/home/tony/Universidad/TFG/Memory/proyecto.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
+
+
+LaTeX Warning: Label `encapsulado' multiply defined.
+
 )
 \openout1 = `proyecto.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 125.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 130.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 130.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 125.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 130.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 130.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 125.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 125.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 130.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 130.
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 125.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
+LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 130.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-\c@lstlisting=\count301
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
+\c@lstlisting=\count304
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
+\scratchcounter=\count305
 \scratchdimen=\dimen276
 \scratchbox=\box70
-\nofMPsegments=\count303
-\nofMParguments=\count304
+\nofMPsegments=\count306
+\nofMParguments=\count307
 \everyMPshowfont=\toks40
-\MPscratchCnt=\count305
+\MPscratchCnt=\count308
 \MPscratchDim=\dimen277
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
 \everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -718,7 +736,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring ON on input line 125.
+Package hyperref Info: Link coloring ON on input line 130.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -726,12 +744,12 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count308
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 125.
-LaTeX Info: Redefining \pageref on input line 125.
-LaTeX Info: Redefining \nameref on input line 125.
- (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.out) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.out)
+LaTeX Info: Redefining \ref on input line 130.
+LaTeX Info: Redefining \pageref on input line 130.
+LaTeX Info: Redefining \nameref on input line 130.
+ (/home/tony/Universidad/TFG/Memory/proyecto.out) (/home/tony/Universidad/TFG/Memory/proyecto.out)
 \@outlinefile=\write6
 \openout6 = `proyecto.out'.
 
@@ -739,9 +757,9 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
- ABD: EveryShipout initializing macros (/home/tony/Universidad/TFG/Plantilla_TFG_latex/portada/portada.tex
+ ABD: EveryShipout initializing macros (/home/tony/Universidad/TFG/Memory/portada/portada.tex
 \centeroffset=\skip76
-<imagenes/logo_ugr_mod.jpg, id=208, 186.6975pt x 55.6479pt>
+<imagenes/logo_ugr_mod.jpg, id=360, 186.6975pt x 55.6479pt>
 File: imagenes/logo_ugr_mod.jpg Graphic file (type jpg)
 <use imagenes/logo_ugr_mod.jpg>
 Package pdftex.def Info: imagenes/logo_ugr_mod.jpg  used on input line 12.
@@ -776,20 +794,20 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 9--25
 | $[]$ 
  []
 
-<imagenes/etsiit_logo.png, id=209, 110.814pt x 40.4712pt>
-File: imagenes/etsiit_logo.png Graphic file (type png)
-<use imagenes/etsiit_logo.png>
-Package pdftex.def Info: imagenes/etsiit_logo.png  used on input line 34.
-(pdftex.def)             Requested size: 108.0011pt x 39.44412pt.
+<imagenes/etsiit_logo_y_qr_proyecto.png, id=361, 366.168pt x 80.9424pt>
+File: imagenes/etsiit_logo_y_qr_proyecto.png Graphic file (type png)
+<use imagenes/etsiit_logo_y_qr_proyecto.png>
+Package pdftex.def Info: imagenes/etsiit_logo_y_qr_proyecto.png  used on input line 35.
+(pdftex.def)             Requested size: 190.79956pt x 42.17798pt.
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 27--41
+Overfull \hbox (24.0pt too wide) in paragraph at lines 27--44
 | $[]$ 
  []
 
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/tony/Universidad/TFG/Plantilla_TFG_latex/imagenes/logo_ugr_mod.jpg> </home/tony/Universidad/TFG/Plantilla_TFG_latex/imagenes/etsiit_logo.png>]) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/prefacios/prefacio.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/tony/Universidad/TFG/Memory/imagenes/logo_ugr_mod.jpg> </home/tony/Universidad/TFG/Memory/imagenes/etsiit_logo_y_qr_proyecto.png>]) (/home/tony/Universidad/TFG/Memory/prefacios/prefacio.tex
 
 Package Fancyhdr Warning: \headheight is too small (1.0pt): 
 Make it at least 13.59999pt.
@@ -802,14 +820,14 @@ This may cause the page layout to be inconsistent, however.
 LaTeX Font Info:    Trying to load font information for T1+bch on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/portada/portada_2.tex [3] [4
+) (/home/tony/Universidad/TFG/Memory/portada/portada_2.tex [3] [4
 
 ]
-<imagenes/logo.png, id=235, 123.46124pt x 45.92157pt>
-File: imagenes/logo.png Graphic file (type png)
-<use imagenes/logo.png>
-Package pdftex.def Info: imagenes/logo.png  used on input line 21.
-(pdftex.def)             Requested size: 123.46092pt x 45.92145pt.
+<imagenes/LogoSmartPen.png, id=385, 200.75pt x 200.75pt>
+File: imagenes/LogoSmartPen.png Graphic file (type png)
+<use imagenes/LogoSmartPen.png>
+Package pdftex.def Info: imagenes/LogoSmartPen.png  used on input line 21.
+(pdftex.def)             Requested size: 90.0pt x 90.00276pt.
 
 Overfull \hbox (24.0pt too wide) in paragraph at lines 8--32
 | $[]$ 
@@ -824,34 +842,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.50 \end{titlepage}
-                     [1 </home/tony/Universidad/TFG/Plantilla_TFG_latex/imagenes/logo.png>])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+                     [1 </home/tony/Universidad/TFG/Memory/imagenes/LogoSmartPen.png>])pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11 \cleardoublepage
-                      [2
+l.6 \cleardoublepage
+                     [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 26--29
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 \cleardoublepage
+l.46 \cleardoublepage
                       [3]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 \cleardoublepage
+l.46 \cleardoublepage
                       [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
@@ -863,14 +881,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 [5] [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 [7] [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
@@ -878,23 +896,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
 ]) [11] [12
 
-] (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.toc
+] (/home/tony/Universidad/TFG/Memory/proyecto.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [13])
+ [13] [14])
 \tf@toc=\write7
 \openout7 = `proyecto.toc'.
 
- [14] (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.lof
+ [15] [16
+
+] (/home/tony/Universidad/TFG/Memory/proyecto.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 17.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 17.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 17.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 17.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 17.
 )
 \tf@lof=\write8
 \openout8 = `proyecto.lof'.
 
- (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/01_Introduccion.tex [15
-
-] [16
+ (/home/tony/Universidad/TFG/Memory/capitulos/01_Introduccion.tex [17] [18
 
 ]
 Cap\'{\i }tulo 1.
@@ -905,7 +935,7 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) [17]) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/02_Estado_del_arte.tex [18]
+) [19]) (/home/tony/Universidad/TFG/Memory/capitulos/02_Estado_del_arte.tex [20]
 Cap\'{\i }tulo 2.
 LaTeX Font Info:    Trying to load font information for T1+pbk on input line 2.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pbk.fd
@@ -915,478 +945,494 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10.95> not available
 (Font)              Font shape `T1/pbk/l/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14.4> not available
 (Font)              Font shape `T1/pbk/l/n' tried instead on input line 2.
- [19
+ [21
 
 ]
-<capturas/esquemaPerceptron.png, id=409, 406.51875pt x 421.575pt>
+<capturas/esquemaPerceptron.png, id=622, 406.51875pt x 421.575pt>
 File: capturas/esquemaPerceptron.png Graphic file (type png)
 <use capturas/esquemaPerceptron.png>
-Package pdftex.def Info: capturas/esquemaPerceptron.png  used on input line 60.
+Package pdftex.def Info: capturas/esquemaPerceptron.png  used on input line 55.
 (pdftex.def)             Requested size: 90.0pt x 93.33215pt.
-<capturas/esquemaMLPerceptron.png, id=410, 1351.0475pt x 502.87875pt>
+<capturas/esquemaMLPerceptron.png, id=623, 1351.0475pt x 502.87875pt>
 File: capturas/esquemaMLPerceptron.png Graphic file (type png)
 <use capturas/esquemaMLPerceptron.png>
-Package pdftex.def Info: capturas/esquemaMLPerceptron.png  used on input line 62.
+Package pdftex.def Info: capturas/esquemaMLPerceptron.png  used on input line 57.
 (pdftex.def)             Requested size: 270.0pt x 100.49722pt.
-<capturas/CNN.png, id=413, 1027.84pt x 451.6875pt>
+<capturas/CNN.png, id=627, 1027.84pt x 451.6875pt>
 File: capturas/CNN.png Graphic file (type png)
 <use capturas/CNN.png>
-Package pdftex.def Info: capturas/CNN.png  used on input line 88.
-(pdftex.def)             Requested size: 259.20044pt x 113.90717pt.
+Package pdftex.def Info: capturas/CNN.png  used on input line 83.
+(pdftex.def)             Requested size: 248.40088pt x 109.15845pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/esquemaPerceptron.png> </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/esquemaMLPerceptron.png>] [21 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/CNN.png>] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 239--247
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--251
-
- []
-
-[23]) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/03_Analisis_de_requisitos.tex [24]
+[22 </home/tony/Universidad/TFG/Memory/capturas/esquemaPerceptron.png> </home/tony/Universidad/TFG/Memory/capturas/esquemaMLPerceptron.png>] [23 </home/tony/Universidad/TFG/Memory/capturas/CNN.png>] [24] [25]) (/home/tony/Universidad/TFG/Memory/capitulos/03_EspecificaciÃ³n_del_sistema.tex [26]
 Cap\'{\i }tulo 3.
 LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <12> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 12.
-[25
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 4.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 32.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [27
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 64.
+               Default added (so using `tbp') on input line 78.
 
-<capturas/ganttFixed.png, id=478, 1520.68124pt x 391.4625pt>
+<capturas/ganttFixed.png, id=697, 1520.68124pt x 391.4625pt>
 File: capturas/ganttFixed.png Graphic file (type png)
 <use capturas/ganttFixed.png>
-Package pdftex.def Info: capturas/ganttFixed.png  used on input line 66.
+Package pdftex.def Info: capturas/ganttFixed.png  used on input line 80.
 (pdftex.def)             Requested size: 1520.67755pt x 391.46153pt.
 
-LaTeX Warning: Float too large for page by 79.4004pt on input line 68.
+LaTeX Warning: Float too large for page by 79.4004pt on input line 82.
 
-[26] [27 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/ganttFixed.png>]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 117.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/04_Microcontrolador.tex [28]
+[28] [29 </home/tony/Universidad/TFG/Memory/capturas/ganttFixed.png>] [30]
+Overfull \hbox (1.35727pt too wide) in paragraph at lines 145--156
+[][] 
+ []
+
+) (/home/tony/Universidad/TFG/Memory/capitulos/04_DiseÃ±o_del_sistema.tex [31] [32
+
+]
 Cap\'{\i }tulo 4.
-[29
 
-] [30]
-Overfull \hbox (26.392pt too wide) in paragraph at lines 96--101
-[]\T1/cmss/m/n/10.95 El sketch se dis-tri-bui-rá en di-fe-ren-tes sec-cio-nes, la prin-ci-pal, \T1/cmss/m/it/10.95 deep_pen.ino\T1/cmss/m/n/10.95 (extensión
- []
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 32.
 
-[31]
-Overfull \hbox (25.07297pt too wide) in paragraph at lines 162--173
-[]\T1/cmss/m/n/10.95 El ser-vi-cio (\T1/cmss/m/it/10.95 let-ter-Sen-der-Ser-vi-ce\T1/cmss/m/n/10.95 ) es-tá com-pues-to por dos ca-rac-te-rís-ti-cas: rx(\T1/cmss/m/it/10.95 rxChar\T1/cmss/m/n/10.95 )
- []
-
-<capturas/BleLetterSenderService.png, id=515, 770.88pt x 489.32813pt>
-File: capturas/BleLetterSenderService.png Graphic file (type png)
-<use capturas/BleLetterSenderService.png>
-Package pdftex.def Info: capturas/BleLetterSenderService.png  used on input line 176.
-(pdftex.def)             Requested size: 360.0pt x 228.51334pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 181--203
-
- []
-
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 203.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 203.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 203.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 203.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 203.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 203.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <9> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 203.
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 203.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 203.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 203.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 203.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/BleLetterSenderService.png>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 232.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 232.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 232.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 232.
-
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 253.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 253.
-[34] [35]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 342.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 342.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 342.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 342.
-
-<capturas/diagramaLeds.png, id=564, 770.88pt x 578.16pt>
-File: capturas/diagramaLeds.png Graphic file (type png)
-<use capturas/diagramaLeds.png>
-Package pdftex.def Info: capturas/diagramaLeds.png  used on input line 348.
-(pdftex.def)             Requested size: 288.0011pt x 215.99783pt.
-)
-Overfull \hbox (23.41217pt too wide) in paragraph at lines 343--164
-\T1/cmss/m/n/10.95 truc-tu-ra pa-ra con-sul-tar el es-ta-do de co-ne-xión de la ite-ra-ción an-te-rior(\T1/cmss/m/it/10.95 last_connection\T1/cmss/m/n/10.95 ).
- []
-
-
-Overfull \hbox (10.8695pt too wide) in paragraph at lines 343--164
-\T1/cmss/m/n/10.95 Sintetizando, lo que se re-ci-be es una va-lo-ra-ción de se-me-jan-za a ca-da le-tra(codificada
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[36]
-Underfull \vbox (badness 1132) has occurred while \output is active []
-
- [37 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/diagramaLeds.png>] (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/05_Red_neuronal.tex [38]
+<capturas/EstructuraDiseÃ±o.png, id=724, 1127.21124pt x 796.9775pt>
+File: capturas/EstructuraDiseÃ±o.png Graphic file (type png)
+<use capturas/EstructuraDiseÃ±o.png>
+Package pdftex.def Info: capturas/EstructuraDiseÃ±o.png  used on input line 34.
+(pdftex.def)             Requested size: 1127.2085pt x 796.97554pt.
+) (/home/tony/Universidad/TFG/Memory/capitulos/05_Microcontrolador.tex [33] [34 </home/tony/Universidad/TFG/Memory/capturas/EstructuraDiseÃ±o.png>]
 Cap\'{\i }tulo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-
+Overfull \hbox (1.12918pt too wide) in paragraph at lines 13--24
+[][] 
  []
 
-[39
-
-] [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42] [43]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 199.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (19.8755pt too wide) in paragraph at lines 199--201
-[]\T1/cmss/m/n/10.95 Para am-pliar: [][]$\T1/cmtt/m/n/10.95 https : / / www . v7labs . com / blog / train-[]validation-[]test-[]set$[][][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Overfull \hbox (285.92622pt too wide) in paragraph at lines 205--207
-[]\T1/cmss/m/n/10.95 Documentación: [][]$\T1/cmtt/m/n/10.95 https : / / towardsdatascience . com / image-[]classification-[]in-[]10-[]minutes-[]with-[]mnist-[]dataset-[]54c35b77a38d$[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 218--167
-
- []
-
-(/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/06_Interfaz_de_usuario.tex [44]
-Cap\'{\i }tulo 6.
-<capturas/DisenoUsuario1.png, id=641, 1445.4pt x 813.0375pt>
-File: capturas/DisenoUsuario1.png Graphic file (type png)
-<use capturas/DisenoUsuario1.png>
-Package pdftex.def Info: capturas/DisenoUsuario1.png  used on input line 11.
-(pdftex.def)             Requested size: 360.0pt x 202.5021pt.
-[45
-
- </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/DisenoUsuario1.png>]
-<capturas/DisenoUsuario2.png, id=648, 1445.4pt x 813.0375pt>
-File: capturas/DisenoUsuario2.png Graphic file (type png)
-<use capturas/DisenoUsuario2.png>
-Package pdftex.def Info: capturas/DisenoUsuario2.png  used on input line 28.
-(pdftex.def)             Requested size: 360.0pt x 202.5021pt.
-<capturas/Interfaz.png, id=649, 984.67876pt x 529.98pt>
-File: capturas/Interfaz.png Graphic file (type png)
-<use capturas/Interfaz.png>
-Package pdftex.def Info: capturas/Interfaz.png  used on input line 37.
-(pdftex.def)             Requested size: 360.0pt x 193.76051pt.
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/07_Herramientas.tex [46 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/DisenoUsuario2.png> </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/Interfaz.png>]
-Cap\'{\i }tulo 7.
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
-
- []
-
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/08_Apendice.tex [47
-
-] [48
+[35
 
 ]
-Cap\'{\i }tulo 8.
+Underfull \vbox (badness 3428) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
+ [36]
+LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 90.
+ [37] [38]
+<capturas/BleLetterSenderService.png, id=770, 770.88pt x 489.32813pt>
+File: capturas/BleLetterSenderService.png Graphic file (type png)
+<use capturas/BleLetterSenderService.png>
+Package pdftex.def Info: capturas/BleLetterSenderService.png  used on input line 200.
+(pdftex.def)             Requested size: 360.0pt x 228.51334pt.
 
- []
+Underfull \vbox (badness 1205) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
-
- []
+ [39 </home/tony/Universidad/TFG/Memory/capturas/BleLetterSenderService.png>]
+LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10.95> not available
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 261.
+ [40] [41]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 343.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 343.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 343.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 11.03998pt on input line 343.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 343.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.43999pt on input line 343.
+LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <9> not available
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 23.
+(hyperref)                removing `\mathsurround' on input line 343.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--30
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 343.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 343.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 343.
+
+<capturas/DiagramaFlujoLeds.png, id=805, 1462.46375pt x 1021.8175pt>
+File: capturas/DiagramaFlujoLeds.png Graphic file (type png)
+<use capturas/DiagramaFlujoLeds.png>
+Package pdftex.def Info: capturas/DiagramaFlujoLeds.png  used on input line 351.
+(pdftex.def)             Requested size: 295.20264pt x 206.24648pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[42] [43 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoLeds.png>]
+<capturas/DiagramaFlujoFirmware.png, id=819, 1791.69376pt x 2816.5225pt>
+File: capturas/DiagramaFlujoFirmware.png Graphic file (type png)
+<use capturas/DiagramaFlujoFirmware.png>
+Package pdftex.def Info: capturas/DiagramaFlujoFirmware.png  used on input line 407.
+(pdftex.def)             Requested size: 288.0011pt x 452.71568pt.
+) (/home/tony/Universidad/TFG/Memory/capitulos/06_Red_neuronal.tex [44 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoFirmware.png>]
+Cap\'{\i }tulo 6.
+[45
+
+] [46]
+<capturas/conv2D.png, id=841, 1018.40475pt x 579.3645pt>
+File: capturas/conv2D.png Graphic file (type png)
+<use capturas/conv2D.png>
+Package pdftex.def Info: capturas/conv2D.png  used on input line 86.
+(pdftex.def)             Requested size: 360.0pt x 204.80505pt.
+ [47 </home/tony/Universidad/TFG/Memory/capturas/conv2D.png>]
+<capturas/esquemaRN.png, id=851, 1684.2925pt x 682.55pt>
+File: capturas/esquemaRN.png Graphic file (type png)
+<use capturas/esquemaRN.png>
+Package pdftex.def Info: capturas/esquemaRN.png  used on input line 136.
+(pdftex.def)             Requested size: 360.0pt x 145.88095pt.
+ [48 </home/tony/Universidad/TFG/Memory/capturas/esquemaRN.png>] [49] [50] [51]) (/home/tony/Universidad/TFG/Memory/capitulos/07_Interfaz_de_usuario.tex [52]
+Cap\'{\i }tulo 7.
+
+Overfull \hbox (0.68916pt too wide) in paragraph at lines 28--43
+[][] 
  []
-
-[49]
-<capturas/ErrorEntrenamiento.png, id=674, 1286.8075pt x 477.785pt>
-File: capturas/ErrorEntrenamiento.png Graphic file (type png)
-<use capturas/ErrorEntrenamiento.png>
-Package pdftex.def Info: capturas/ErrorEntrenamiento.png  used on input line 89.
-(pdftex.def)             Requested size: 360.0pt x 133.66223pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[50]
-<capturas/ErrorTamanioSecuencias.png, id=707, 1455.4375pt x 393.47pt>
-File: capturas/ErrorTamanioSecuencias.png Graphic file (type png)
-<use capturas/ErrorTamanioSecuencias.png>
-Package pdftex.def Info: capturas/ErrorTamanioSecuencias.png  used on input line 111.
-(pdftex.def)             Requested size: 360.0pt x 97.32257pt.
+[53
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--135
+] [54]
+LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <14.4> not available
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 134.
+ [55]
+Underfull \vbox (badness 1275) has occurred while \output is active []
 
- []
+ [56] [57]
+<capturas/DiagramaFlujoUI.png, id=945, 2452.16125pt x 2910.875pt>
+File: capturas/DiagramaFlujoUI.png Graphic file (type png)
+<use capturas/DiagramaFlujoUI.png>
+Package pdftex.def Info: capturas/DiagramaFlujoUI.png  used on input line 259.
+(pdftex.def)             Requested size: 360.0pt x 427.3294pt.
+) (/home/tony/Universidad/TFG/Memory/capitulos/08_Encapsulado.tex [58 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoUI.png>]
+Cap\'{\i }tulo 8.
+[59
 
-
-Underfull \vbox (badness 1082) has occurred while \output is active []
-
- [51 </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/ErrorEntrenamiento.png> </home/tony/Universidad/TFG/Plantilla_TFG_latex/capturas/ErrorTamanioSecuencias.png>]
-Overfull \hbox (72.0362pt too wide) in paragraph at lines 136--138
-[][]$\T1/cmtt/m/n/10.95 https : / / create . arduino . cc / projecthub / sibo _ gao / harry-[]potter-[]magic-[]wand-[]384477$[][] 
- []
-
-
-Overfull \hbox (10.6653pt too wide) in paragraph at lines 140--142
-[]\T1/cmss/m/n/10.95 Orientación pa-ra vTen-sor-Flow no Har-vard: [][]$\T1/cmtt/m/n/10.95 https : / / github . com / andriyadi /
- []
-
-
-Overfull \hbox (14.45248pt too wide) in paragraph at lines 140--142
-\T1/cmtt/m/n/10.95 MagicWand-[]TFLite-[]Arduino / blob / master / src / accelerometer _ handler . cpp$[][] 
- []
-
-
-Overfull \hbox (3.81357pt too wide) in paragraph at lines 144--147
-[]\T1/cmss/m/n/10.95 Para mo-do pi-za-rra: [][]$\T1/cmtt/m/n/10.95 https : / / github . com / petewarden / magic _ wand / blob /
- []
-
-
-Overfull \hbox (18.89249pt too wide) in paragraph at lines 144--147
-\T1/cmtt/m/n/10.95 main / website / index . html$[][]\T1/cmss/m/n/10.95 . [][]$\T1/cmtt/m/n/10.95 https : / / tinyml . seas . harvard . edu / magic _ wand/$[][] 
- []
-
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/09_Validacion.tex [52]
+]) (/home/tony/Universidad/TFG/Memory/capitulos/09_Validacion.tex [60]
 Cap\'{\i }tulo 9.
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/10_Trabajos_futuros.tex [53
+[61
 
-] [54
-
-]
+]) (/home/tony/Universidad/TFG/Memory/capitulos/10_Trabajos_futuros.tex [62]
 Cap\'{\i }tulo 10.
-) (/home/tony/Universidad/TFG/Plantilla_TFG_latex/capitulos/11_Conclusiones.tex [55] [56
+[63
 
-]
+]) (/home/tony/Universidad/TFG/Memory/capitulos/11_Conclusiones.tex [64]
 Cap\'{\i }tulo 11.
-) [57] (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.bbl [58
+)
+Underfull \hbox (badness 10000) in paragraph at lines 22--207
+
+ []
+
+[65
+
+] (/home/tony/Universidad/TFG/Memory/proyecto.bbl [66
 
 ]
-Underfull \hbox (badness 7047) in paragraph at lines 15--19
-[]\T1/cmss/m/n/10.95 Arduino.  Bi-blio-te-ca ar-duino_lsm9ds1.  [][]$\T1/cmtt/m/n/10.95 https : / / github . com /
+Overfull \hbox (24.15944pt too wide) in paragraph at lines 31--35
+[][]$\T1/cmtt/m/n/10.95 https : / / www . bluetooth . com / blog / a-[]developers-[]guide-[]to-[]bluetooth/$[][]\T1/cmss/m/n/10.95 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-\T1/cmtt/m/n/10.95 arduino-[]libraries / Arduino _ LSM9DS1 / blob / master / src / LSM9DS1 .
- []
-
-
-Underfull \hbox (badness 3977) in paragraph at lines 48--52
+Underfull \hbox (badness 3977) in paragraph at lines 58--62
 []\T1/cmss/m/n/10.95 DeepMind.  Alp-ha-fold2 web-pa-ge.  [][]$\T1/cmtt/m/n/10.95 https : / / www . deepmind . com /
  []
 
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 75--79
-[]\T1/cmss/m/n/10.95 iars.geo.  Bre-ve his-to-ria de las re-des neu-ro-na-les ar-
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 95--99
+[][]$\T1/cmtt/m/n/10.95 https : / / steemit . com / spanish / @iars . geo /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--79
-\T1/cmss/m/n/10.95 ti-fi-cia-les.  [][]$\T1/cmtt/m/n/10.95 https : / / steemit . com / spanish / @iars . geo /
- []
-
-
-Overfull \hbox (26.15944pt too wide) in paragraph at lines 75--79
+Overfull \hbox (26.15944pt too wide) in paragraph at lines 95--99
 \T1/cmtt/m/n/10.95 breve-[]historias-[]de-[]las-[]redes-[]neuronales-[]artificiales-[]articulo-[]1$[][]\T1/cmss/m/n/10.95 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--105
-[]\T1/cmss/m/n/10.95 Keras.  Dro-pout class.  [][]$\T1/cmtt/m/n/10.95 https : / / keras . io / api / layers /
+Underfull \hbox (badness 10000) in paragraph at lines 116--120
+[][]$\T1/cmtt/m/n/10.95 https : / / www . techtarget . com / searchenterpriseai / definition /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--116
-[]\T1/cmss/m/n/10.95 Keras.  Res-ca-ling class.  [][]$\T1/cmtt/m/n/10.95 https : / / keras . io / api / layers /
+Underfull \hbox (badness 10000) in paragraph at lines 122--126
+[][]$\T1/cmtt/m/n/10.95 https : / / medium . com / inside-[]machine-[]learning /
  []
 
 
-Underfull \hbox (badness 5817) in paragraph at lines 128--132
-[]\T1/cmss/m/n/10.95 Ben Lut-ke-vich.  Na-tu-ral lan-gua-ge pro-ces-sing (nlp).  [][]$\T1/cmtt/m/n/10.95 https :
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
+[][]$\T1/cmtt/m/n/10.95 https : / / www . aprendemachinelearning . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--132
-\T1/cmtt/m/n/10.95 / / www . techtarget . com / searchenterpriseai / definition /
+Underfull \hbox (badness 10000) in paragraph at lines 144--148
+[]\T1/cmss/m/n/10.95 Jonathan Step-hens (Nvi-dia).  Get-ting star-ted with nvi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--138
-[]\T1/cmss/m/n/10.95 Maxime.  What is a trans-for-mer?  [][]$\T1/cmtt/m/n/10.95 https : / / medium . com /
+Underfull \hbox (badness 10000) in paragraph at lines 144--148
+\T1/cmss/m/n/10.95 dia ins-tant nerfs.  [][]$\T1/cmtt/m/n/10.95 https : / / developer . nvidia . com / blog /
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
-[]\T1/cmss/m/n/10.95 Na8.  Bre-ve his-to-ria de las re-des neu-ro-na-les ar-ti-fi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
-\T1/cmss/m/n/10.95 cia-les.  [][]$\T1/cmtt/m/n/10.95 https : / / www . aprendemachinelearning . com /
- []
-
-[60]
-Underfull \hbox (badness 5446) in paragraph at lines 161--165
+[68]
+Underfull \hbox (badness 5446) in paragraph at lines 155--159
 []\T1/cmss/m/n/10.95 Peltarion.  Glo-bal ave-ra-ge poo-ling 2d.  [][]$\T1/cmtt/m/n/10.95 https : / / peltarion .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--165
+Underfull \hbox (badness 10000) in paragraph at lines 155--159
 \T1/cmtt/m/n/10.95 com / knowledge-[]center / documentation / modeling-[]view /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
-[]\T1/cmss/m/n/10.95 Jonathan Step-hens(Nvidia).  Get-ting star-ted with nvi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
-\T1/cmss/m/n/10.95 dia ins-tant nerfs.  [][]$\T1/cmtt/m/n/10.95 https : / / developer . nvidia . com / blog /
- []
-
-
-Underfull \hbox (badness 1184) in paragraph at lines 178--181
+Underfull \hbox (badness 1184) in paragraph at lines 203--206
 []\T1/cmss/m/n/10.95 TensorFlow.  Build con-vert.  [][]$\T1/cmtt/m/n/10.95 https : / / www . tensorflow . org / lite /
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 183--187
+Underfull \hbox (badness 1242) in paragraph at lines 208--212
+[]\T1/cmss/m/n/10.95 TensorFlow.  Git-hub ejem-plo ma-gic_wand de ten-sor-flow.  [][]$\T1/cmtt/m/n/10.95 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--212
+\T1/cmtt/m/n/10.95 / / github . com / tensorflow / tflite-[]micro / tree / main / tensorflow /
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 214--218
 []\T1/cmss/m/n/10.95 TensorFlow.  In-tro-duc-ción a los mi-cro-con-tro-la-do-res por ten-sor-
  []
 
-
-Underfull \hbox (badness 2065) in paragraph at lines 216--219
+[69]
+Underfull \hbox (badness 2065) in paragraph at lines 253--256
 []\T1/cmss/m/n/10.95 Wikipedia.  Mi-cro-con-tro-la-dor.  [][]$\T1/cmtt/m/n/10.95 https : / / es . wikipedia . org / wiki /
  []
 
-) [61]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
- (/home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--267
+[]\T1/cmss/m/n/10.95 Orhan G. Ya-lçin.  Ima-ge clas-si-fi-ca-tion in 10 mi-nu-tes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--267
+\T1/cmss/m/n/10.95 with MNIST da-ta-set.  [][]$\T1/cmtt/m/n/10.95 https : / / towardsdatascience . com /
+ []
+
+
+Overfull \hbox (43.13455pt too wide) in paragraph at lines 263--267
+\T1/cmtt/m/n/10.95 image-[]classification-[]in-[]10-[]minutes-[]with-[]mnist-[]dataset-[]54c35b77a38d$[][]\T1/cmss/m/n/10.95 . 
+ []
+
+) (/home/tony/Universidad/TFG/Memory/capitulos/12_Apendice.tex [70]
+Ap\'{e}ndice A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--16
+
+ []
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 19.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 19.
+[71
+
+
+] [72]
+Ap\'{e}ndice B.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 77.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 77.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 77.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 77.
+LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
+(Font)              Font shape `T1/pbk/l/n' tried instead on input line 77.
+
+Overfull \hbox (10.00464pt too wide) in paragraph at lines 77--77
+|[]\T1/pbk/l/n/14.4 Ajuste pa-ra po-der uti-li-zar el re-co-lec-tor de mues-
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 77.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 77.
+
+
+Overfull \hbox (3.61113pt too wide) in paragraph at lines 93--93
+|[]\T1/pbk/l/n/14.4 El re-co-lec-tor de mues-tras eli-mi-na va-rias mues-
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+Overfull \hbox (16.11076pt too wide) in paragraph at lines 110--112
+[]\T1/cmss/m/n/10.95 Las ca-pas uti-li-za-das du-ran-te la im-ple-men-ta-ción del mo-de-lo, son las siguientes$[]$: 
+ []
+
+[73
+
+]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 157.
+
+<capturas/estructuraRNTF.png, id=1133, 602.25pt x 1555.8125pt>
+File: capturas/estructuraRNTF.png Graphic file (type png)
+<use capturas/estructuraRNTF.png>
+Package pdftex.def Info: capturas/estructuraRNTF.png  used on input line 159.
+(pdftex.def)             Requested size: 251.9989pt x 650.99161pt.
+
+LaTeX Warning: Float too large for page by 68.8327pt on input line 161.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) [74] [75 </home/tony/Universidad/TFG/Memory/capturas/estructuraRNTF.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 205--215
+
+ []
+
+[76] [77] [78
+
+]
+Ap\'{e}ndice C.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+) [79]
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 299--302
+\T1/cmtt/m/n/10.95 org / c / qt / qtconnectivity / + / 233087 / 3 / src / bluetooth / qlowenergycontroller _
+ []
+
+
+Overfull \hbox (4.95024pt too wide) in paragraph at lines 309--309
+|[]\T1/pbk/l/n/14.4 Error de per-mi-sos al lan-zar la in-ter-faz de usua-
+ []
+
+[80]
+<capturas/DisenoUsuario2.png, id=1213, 1445.4pt x 813.0375pt>
+File: capturas/DisenoUsuario2.png Graphic file (type png)
+<use capturas/DisenoUsuario2.png>
+Package pdftex.def Info: capturas/DisenoUsuario2.png  used on input line 339.
+(pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
+<capturas/Interfaz.png, id=1214, 1015.795pt x 604.2575pt>
+File: capturas/Interfaz.png Graphic file (type png)
+<use capturas/Interfaz.png>
+Package pdftex.def Info: capturas/Interfaz.png  used on input line 345.
+(pdftex.def)             Requested size: 1015.79253pt x 604.25603pt.
+
+
+LaTeX Warning: Float too large for page by 23.02937pt on input line 347.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[81 </home/tony/Universidad/TFG/Memory/capturas/DisenoUsuario2.png>] [82 </home/tony/Universidad/TFG/Memory/capturas/Interfaz.png>]
+Ap\'{e}ndice D.
+<capturas/cilindroAlto.png, id=1242, 220.825pt x 532.99126pt>
+File: capturas/cilindroAlto.png Graphic file (type png)
+<use capturas/cilindroAlto.png>
+Package pdftex.def Info: capturas/cilindroAlto.png  used on input line 353.
+(pdftex.def)             Requested size: 66.59912pt x 160.74442pt.
+<capturas/slotBaterÃ­a.png, id=1245, 417.56pt x 461.725pt>
+File: capturas/slotBaterÃ­a.png Graphic file (type png)
+<use capturas/slotBaterÃ­a.png>
+Package pdftex.def Info: capturas/slotBaterÃ­a.png  used on input line 355.
+(pdftex.def)             Requested size: 145.79956pt x 161.21867pt.
+<capturas/cilindroBajo.png, id=1248, 227.85126pt x 242.9075pt>
+File: capturas/cilindroBajo.png Graphic file (type png)
+<use capturas/cilindroBajo.png>
+Package pdftex.def Info: capturas/cilindroBajo.png  used on input line 357.
+(pdftex.def)             Requested size: 143.9978pt x 153.51436pt.
+<capturas/clip.png, id=1251, 244.915pt x 167.62625pt>
+File: capturas/clip.png Graphic file (type png)
+<use capturas/clip.png>
+Package pdftex.def Info: capturas/clip.png  used on input line 363.
+(pdftex.def)             Requested size: 97.20154pt x 66.52496pt.
+<capturas/punta.png, id=1254, 173.64874pt x 180.675pt>
+File: capturas/punta.png Graphic file (type png)
+<use capturas/punta.png>
+Package pdftex.def Info: capturas/punta.png  used on input line 365.
+(pdftex.def)             Requested size: 64.79736pt x 67.42212pt.
+<capturas/semiEsfera.png, id=1257, 165.61874pt x 153.57375pt>
+File: capturas/semiEsfera.png Graphic file (type png)
+<use capturas/semiEsfera.png>
+Package pdftex.def Info: capturas/semiEsfera.png  used on input line 367.
+(pdftex.def)             Requested size: 75.60242pt x 70.10345pt.
+<capturas/SmartPen.png, id=1260, 1247.66125pt x 3017.2725pt>
+File: capturas/SmartPen.png Graphic file (type png)
+<use capturas/SmartPen.png>
+Package pdftex.def Info: capturas/SmartPen.png  used on input line 374.
+(pdftex.def)             Requested size: 172.79846pt x 417.85733pt.
+<capturas/SmartPenTrasero.png, id=1261, 859.21pt x 3399.70125pt>
+File: capturas/SmartPenTrasero.png Graphic file (type png)
+<use capturas/SmartPenTrasero.png>
+Package pdftex.def Info: capturas/SmartPenTrasero.png  used on input line 376.
+(pdftex.def)             Requested size: 104.39758pt x 413.03032pt.
+[83
+
+ </home/tony/Universidad/TFG/Memory/capturas/cilindroAlto.png> </home/tony/Universidad/TFG/Memory/capturas/slotBaterÃ­a.png> </home/tony/Universidad/TFG/Memory/capturas/cilindroBajo.png> </home/tony/Universidad/TFG/Memory/capturas/clip.png> </home/tony/Universidad/TFG/Memory/capturas/punta.png> </home/tony/Universidad/TFG/Memory/capturas/semiEsfera.png>]) [84 </home/tony/Universidad/TFG/Memory/capturas/SmartPen.png> </home/tony/Universidad/TFG/Memory/capturas/SmartPenTrasero.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
+ (/home/tony/Universidad/TFG/Memory/proyecto.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 34D2F9369BD181232F08822D86BC40CA;3637.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
+(rerunfilecheck)             Checksum: 10C44BDBD9302040628D2E24519F8877;7226.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
  ) 
 Here is how much of TeX's memory you used:
- 21846 strings out of 481239
- 394571 string characters out of 5920376
- 654177 words of memory out of 5000000
- 36341 multiletter control sequences out of 15000+600000
- 613687 words of font info for 113 fonts, out of 8000000 for 9000
+ 22610 strings out of 481239
+ 404821 string characters out of 5920376
+ 854531 words of memory out of 5000000
+ 36937 multiletter control sequences out of 15000+600000
+ 648094 words of font info for 146 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,81p,1002b,1286s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/tony/Universidad/TFG/Plantilla_TFG_latex/proyecto.pdf (65 pages, 1027145 bytes).
+ 59i,12n,81p,989b,1434s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on /home/tony/Universidad/TFG/Memory/proyecto.pdf (88 pages, 4853577 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 839 compressed objects within 9 object streams
- 217 named destinations out of 1000 (max. 500000)
- 483 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1445 PDF objects out of 1728 (max. 8388607)
+ 1265 compressed objects within 13 object streams
+ 340 named destinations out of 1000 (max. 500000)
+ 842 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,20 +4,25 @@
 \usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
 \usepackage{listings} % para insertar código con formato similar al editor
 \usepackage[spanish, es-tabla]{babel} % Selecciona el español para palabras introducidas automáticamente, p.ej. "septiembre" en la fecha y especifica que se use la palabra Tabla en vez de Cuadro
-\usepackage{url} % ,href} %para incluir URLs e hipervínculos dentro del texto (aunque hay que instalar href)
-\usepackage{graphics,graphicx, float} %para incluir imágenes y colocarlas
-\usepackage[gen]{eurosym} %para incluir el símbolo del euro
-\usepackage{cite} %para incluir citas del archivo <nombre>.bib
+\usepackage{url} % ,href} % para incluir URLs e hipervínculos dentro del texto (aunque hay que instalar href)
+\usepackage{graphics,graphicx, float} % para incluir imágenes y colocarlas
+\usepackage[gen]{eurosym} % para incluir el símbolo del euro
+\usepackage{cite} % para incluir citas del archivo <nombre>.bib
 \usepackage{enumerate}
 \usepackage{hyperref}
-\usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{charter}
-\setcounter{tocdepth}{4}    %para mostrar en el índice hasta subsubsecciones
-\setcounter{secnumdepth}{3} %para mostrar numerado hasta subsubsecciones
+\usepackage[toc,page]{appendix}
+\renewcommand\appendixtocname{Apéndices} % Remplazar Appendices por Apéndices en Índice
+\setcounter{tocdepth}{4}    % para mostrar en el índice hasta subsubsecciones
+\setcounter{secnumdepth}{3} % para mostrar numerado hasta subsubsecciones
 
+
+\usepackage{pifont} %para usar caracter check
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 
 \usepackage[Lenny]{fncychap}
 \setlength{\topmargin}{-22pt}
@@ -98,7 +103,7 @@
 {colback=green!3!white,colframe=green!25!white!75!black,
 fonttitle=\bfseries, title=Teoría~\thetcbcounter: #2,#1}
 
-% Cuadro para teoría
+% Cuadro para problemas
 \newtcolorbox[auto counter, number within=section]{problemas}[2][]
 {colback=red!3!white,colframe=red!25!white!75!black,
 fonttitle=\bfseries, title=Problemas~\thetcbcounter: #2,#1}
@@ -157,16 +162,19 @@ fonttitle=\bfseries, title=Problemas~\thetcbcounter: #2,#1}
 	\input{capitulos/02_Estado_del_arte.tex}
 
 	% Análisis de requisitos
-	\input{capitulos/03_Analisis_de_requisitos.tex}
+	\input{capitulos/03_Especificación_del_sistema.tex}
+
+	% Diseño del sistema completo
+	\input{capitulos/04_Diseño_del_sistema.tex}
 
 	% Skectch cargado en la placa
-	\input{capitulos/04_Microcontrolador.tex}
+	\input{capitulos/05_Microcontrolador.tex}
 
 	% Diseño y entrenamiento de la red neuronal
-	\input{capitulos/05_Red_neuronal.tex}
+	\input{capitulos/06_Red_neuronal.tex}
 
 	% Diseño interfaz de usuario 
-	\input{capitulos/06_Interfaz_de_usuario.tex}
+	\input{capitulos/07_Interfaz_de_usuario.tex}
 
 	% Entrenamiento
 	%\input{capitulos/entrenamiento.tex}
@@ -177,9 +185,6 @@ fonttitle=\bfseries, title=Problemas~\thetcbcounter: #2,#1}
 	% Notas
 	%\input{capitulos/intento_Harvard.tex}
 
-	% Herramientas
-	\input{capitulos/07_Herramientas.tex}
-
 	% Desarrollo bajo sprints: 
 	% 	1. Permitir registros y login de usuarios
 	% 	2. Desarrollo del sistema de incidencias
@@ -188,8 +193,8 @@ fonttitle=\bfseries, title=Problemas~\thetcbcounter: #2,#1}
 	%   5. Instalación de la aplicación de manera automática
 	%\input{capitulos/implementacion}
 
-	% Apéndice
-	\input{capitulos/08_Apendice}
+	% Encapsulado
+	\input{capitulos/08_Encapsulado}
 
 	% Validación
 	\input{capitulos/09_Validacion.tex}
@@ -200,10 +205,14 @@ fonttitle=\bfseries, title=Problemas~\thetcbcounter: #2,#1}
 	% Conclusiones
 	\input{capitulos/11_Conclusiones}
 
-
 	\newpage
+	\nocite{*}
+	%{\raggedright
 	\bibliography{bibliografia}
 	\bibliographystyle{plain}
-	
+
+	% Apéndice
+	\input{capitulos/12_Apendice.tex}
+
 \end{document}
 

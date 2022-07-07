@@ -1,0 +1,51 @@
+\chapter{Trabajos futuros y mejoras}
+Si bien el dispositivo realiza lo que se postulaba al comienzo
+como requerimientos. Sin embargo quedan muchas mejoras y ampliaciones
+posibles, en su mayoría por carencia de tiempo.
+
+Una de las que más me incordian, es el no haber podido añadir
+la funcionalidad de 'modo pizarra', ya que si bien no estaba planteado
+como requisito, era algo que pretendía hacer desde el planteamiento del
+trabajo, ya que me resulta especialmente útil como complemento a una
+herramienta que pretende ser un híbrido entre lápiz y teclado.
+De hecho la solución era integrar el módulo de exposición del trazado
+de la herramienta de recolección de datos
+(\href{https://github.com/AntonioPriego/SmartPen/blob/main/DataCollector/SmartPen_DataCollector.html}{\textit{SmartPen\_DataCollector}})
+en el propio interfaz de usuario, haciendo uso de las herramientas de \textit{QT}
+para visualización web. Sin embargo al emplear la web \textit{bluetooth}
+para la recolección del trazo generado por el microcontrolador, dificultaba
+mucho la implementación y viendo que se alargaría más de lo esperado,
+se tomó la decisión de postergarlo.
+
+Otro añadido que habría dado más autonomía al dispositivo, es el uso
+de un buffer de memoria en el microcontrolador para almacenar
+las letras que se escribieran previas a la conexión con la interfaz
+de usuario. Y que es en realidad una funcionalidad muy fácil de implementar
+ya que solo habría que crear el propio buffer en el microcontrolador
+y cambiar la lógica de la comunicación interfaz-microcontrolador de una
+letra a varias letras consecutivamente enviadas.
+
+Esta sin embargo sería una mejora mucho más compleja y que llevaría
+un proceso de documentación a bajo nivel, un tanto distendido.
+El problema de desconexiones descrito en Problemas \ref{errDescBT}.
+La solución sería encontrar el problema que desemboca en la desconexión
+y que parte de la librería mencionada y el stack de protocolos \textit{bluetooth}
+de \textit{linux}.
+
+Lo cual nos lleva a otra posible mejora y es la implementación de la interfaz
+para \textit{Windows} o \textit{macOS}. Me gustaría poder haberla realizado, pero el tiempo
+no alcanza para más y dado que trabajo habitualmente en \textit{linux},
+era más inteligente comenzar implementando la interfaz solo para este sistema.
+En principio la solución pasaría por, simplemente, añadir la configuración de
+puertos correspondientes para cada sistema.
+
+Una mejora que significaría un rango mucho mayor de detección para el \textit{SmartPen}
+y algo más de precisión, sería aumentar el número de muestras con el que
+entrenar el modelo. Pero como se expuso en la Sección \ref{dataColl}, es un proceso
+que lleva muchísimo tiempo. Aunque sencilla, esta mejora supone emplear tiempo
+del que no se dispone.
+
+En realidad hay un sinfín de posibles mejoras y nuevas funcionalidades,
+pero por esto mismo y dado que es un proyecto interesante y lleno de
+posibilidades, se ha planteado su desarrollo abierto y libre a aportaciones de
+la comunidad.
