@@ -611,7 +611,7 @@ border-right-color: rgb(20, 20, 20);
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="StartupPage">
              <property name="font">
@@ -673,7 +673,7 @@ border-right-color: rgb(20, 20, 20);
                        <string notr="true">color: rgb(230, 230, 230);</string>
                       </property>
                       <property name="text">
-                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;According to the function the text is supposed to&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;be started from the bottom left but it starts too low and&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;left. I know I can find a point by trial error so it doesn’t gets&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;cut off- you can -20 to the height and it will be fine enough&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;for this one. But it will only fix this specific text! It wont be&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;the same for any label with a different size or text or font.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;The SmartPen is a tool capable of detecting letters&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;by using a DeepLearning model.&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;That is the principle of this device, however it is full&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;of potential and thanks to this user interface you&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;will be able to access all the functionalities&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;that are created for it.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                       </property>
                       <property name="alignment">
                        <set>Qt::AlignJustify|Qt::AlignVCenter</set>
@@ -727,7 +727,7 @@ border-right-color: rgb(20, 20, 20);
 outline:2px black;</string>
                       </property>
                       <property name="text">
-                       <string>DeepPen Software</string>
+                       <string>SmartPen Software</string>
                       </property>
                       <property name="scaledContents">
                        <bool>false</bool>
