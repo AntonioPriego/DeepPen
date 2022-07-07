@@ -246,7 +246,6 @@ void loop()
     TF_LITE_REPORT_ERROR(error_reporter, "%s", recognized);
 
     // Leds logic when letter detected
-    digitalWrite(LED_PWR, HIGH);
     digitalWrite(LED_GREEN, LOW); 
     digitalWrite(LED_BLUE, HIGH);
     delay(800);    
