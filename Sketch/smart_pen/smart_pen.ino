@@ -242,8 +242,16 @@ void loop()
     // Send letter via BLE characteristic
     txChar.writeValue(letter);
     
-    //Send letter via serial port
+    // Send letter via serial port
     TF_LITE_REPORT_ERROR(error_reporter, "%s", recognized);
+
+    // Leds logic when letter detected
+    digitalWrite(LED_PWR, HIGH);
+    digitalWrite(LED_GREEN, LOW); 
+    digitalWrite(LED_BLUE, HIGH);
+    delay(800);    
+    digitalWrite(LED_BLUE, LOW);
+    digitalWrite(LED_GREEN, HIGH);
   }
   else if (rxSignal) { // Not just triggered and rxSignal received
     txChar.writeValue('.');
