@@ -38,7 +38,6 @@ MainWindow::MainWindow(QWidget *parent)
     readerThread->start();
     connect(readerThread, &ReaderThread::sendReaded, [&](QString _read) {
         ui->recognisedLetters->setText(_read);
-        qDebug() << "Pasa:" << _read;
     } );
 
     // Linking thread to connected status
@@ -118,10 +117,6 @@ void MainWindow::on_ButtonAboutDev_clicked()
 
 void MainWindow::on_ButtonSync_clicked()
 {
-    //bool SmartPen::connectToSmartPen(this);
-
-    qDebug() << "Pulsado Sync";
-
     setButtonSyncClickable(false);
 }
 

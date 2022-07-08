@@ -40,7 +40,7 @@ void ReaderThread::run()
 
             readDone = false;
 
-            device->scanServices();
+            device->connectToDevice();
 
             while(!readDone) {
                 checkPort();
@@ -52,7 +52,7 @@ void ReaderThread::run()
 
             char btLetter = device->newLetter();
             if (btLetter >= 'a'  &&  btLetter <='z') {
-                qDebug() << "LETTER:::: " << btLetter;
+                qDebug() << "LETTER on BT : " << btLetter;
                 readString += btLetter;
                 currentConnected = true;
                 emit sendReaded(readString);
@@ -62,8 +62,6 @@ void ReaderThread::run()
                 currentConnected = true;
                 itWithoutSignal = 0;
             }
-
-            qDebug() << "BTLETTER: " << btLetter;
 
             emit isConnected(currentConnected);
         }

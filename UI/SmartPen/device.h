@@ -19,17 +19,10 @@ public:
 
     void startDeviceDiscovery();
     void setDevice(const QBluetoothDeviceInfo &info);
-    const QBluetoothDeviceInfo *getDevice();
-    void setServices();
     void addLowEnergyService(const QBluetoothUuid &serviceUuid);
     void connectToService();
-    void deviceConnected();
-    void scanServices();
-    void serviceScanDone();
-    void serviceDetailsDiscovered(QLowEnergyService::ServiceState newState);
+    void connectToDevice();
     char newLetter();
-    void stateChanged(QLowEnergyController::ControllerState state);
-    bool isBTEnabled();
 
 Q_SIGNALS:
     void characteristicsUpdated();
@@ -39,16 +32,19 @@ Q_SIGNALS:
 private:
     QBluetoothDeviceDiscoveryAgent *discoveryAgent;
     QLowEnergyController *controller = nullptr;
-
     QBluetoothLocalDevice localDevice;
     QBluetoothDeviceInfo *device;
     QLowEnergyService *service;
-
     char letter;
 
+    void onStateChanged(QLowEnergyController::ControllerState state);
+    void onServiceDetailsDiscovered(QLowEnergyService::ServiceState newState);
+    void onDeviceConnected();
+    void onServiceScanDone();
+
 private slots:
-        void errorReceived(QLowEnergyController::Error);
-        void deviceDisconnected();
+        void onErrorReceived(QLowEnergyController::Error);
+        void onDeviceDisconnected();
 };
 
 #endif // DEVICE_H

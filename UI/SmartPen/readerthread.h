@@ -33,7 +33,6 @@ private:
     QString portAltName  = "ttyACM1"; // unplug and plug port name
     QString readString   = "";
     bool disconnectedPrinted = false;
-    bool connectedPrnted     = false;
     bool justDisconnected    = true;
     bool readDone            = false;
     bool portOpen            = true;

@@ -1,6 +1,6 @@
 #include "device.h"
 
-
+// Constructor
 Device::Device(QObject *parent)
     : QObject{parent}
 {
@@ -10,6 +10,7 @@ Device::Device(QObject *parent)
             this, &Device::setDevice);
 }
 
+// Destructor
 Device::~Device()
 {
     delete discoveryAgent;
@@ -18,6 +19,7 @@ Device::~Device()
     delete service;
 }
 
+// To start bluetooth devices discovery
 void Device::startDeviceDiscovery()
 {
     localDevice.powerOn();
@@ -29,6 +31,7 @@ void Device::startDeviceDiscovery()
     }
 }
 
+// To define the device to work with (SmartPen)
 void Device::setDevice(const QBluetoothDeviceInfo &info)
 {
     if (info.name() == "Arduino"  ||  info.name() == "SmartPen"  ||  info.name() == "DeepPen") {
@@ -41,24 +44,8 @@ void Device::setDevice(const QBluetoothDeviceInfo &info)
         qDebug() << "\tBOARD DETECTED: other boards" << "(" << info.name() << ")";
 }
 
-const QBluetoothDeviceInfo *Device::getDevice()
-{
-    return device;
-}
-
-void Device::setServices()
-{
-    if (!device->isValid()) {
-        qDebug() << "ERROR: NOT VALID DEVICE\n";
-        return;
-    }
-
-    //controller = QLowEnergyController::createCentral(*device);
-
-    scanServices();
-}
-
-void Device::scanServices()
+// To connect to SmartPen and connect signals
+void Device::connectToDevice()
 {
     if (!device->isValid()) {
         qDebug() << "SCAN NOT WORKING: Device not valid";
@@ -71,23 +58,23 @@ void Device::scanServices()
     // Connecting signals and slots for connecting to LE services.
     controller = QLowEnergyController::createCentral(*device);
     connect(controller, &QLowEnergyController::connected,
-            this, &Device::deviceConnected);
+            this, &Device::onDeviceConnected);
     connect(controller, &QLowEnergyController::errorOccurred,
-            this, &Device::errorReceived);
+            this, &Device::onErrorReceived);
     connect(controller, &QLowEnergyController::disconnected,
-            this, &Device::deviceDisconnected);
+            this, &Device::onDeviceDisconnected);
     connect(controller, &QLowEnergyController::serviceDiscovered,
             this, &Device::addLowEnergyService);
     connect(controller, &QLowEnergyController::discoveryFinished,
-            this, &Device::serviceScanDone);
+            this, &Device::onServiceScanDone);
     connect(controller, &QLowEnergyController::stateChanged,
-            this, &Device::stateChanged);
+            this, &Device::onStateChanged);
 
     controller->setRemoteAddressType(QLowEnergyController::PublicAddress);
-    //qDebug() << controller->role();
     controller->connectToDevice();
 }
 
+// To add the LE service
 void Device::addLowEnergyService(const QBluetoothUuid &serviceUuid)
 {    if (serviceUuid.toString() == SERIALPORT_SERVICE_UUID) {
         service = controller->createServiceObject( serviceUuid );
@@ -99,28 +86,32 @@ void Device::addLowEnergyService(const QBluetoothUuid &serviceUuid)
     }
 }
 
+// To connect a service from the SmartPen connected
 void Device::connectToService()
 {
     if (service->state() == QLowEnergyService::RemoteService) {
         connect(service, &QLowEnergyService::stateChanged,
-                this, &Device::serviceDetailsDiscovered);
+                this, &Device::onServiceDetailsDiscovered);
 
         service->discoverDetails();
     }
 }
 
-void Device::deviceConnected()
+// Function when SmartPen connect
+void Device::onDeviceConnected()
 {
     controller->discoverServices();
 }
 
-void Device::serviceScanDone()
+// Function when all the services are scanned
+void Device::onServiceScanDone()
 {
     if (service->state() == QLowEnergyService::RemoteService)
         connectToService();
 }
 
-void Device::serviceDetailsDiscovered(QLowEnergyService::ServiceState newState)
+// Function when a new service is discovered
+void Device::onServiceDetailsDiscovered(QLowEnergyService::ServiceState newState)
 {
     if (newState != QLowEnergyService::RemoteServiceDiscovered) {
         if (newState != QLowEnergyService::RemoteServiceDiscovering) {
@@ -141,7 +132,7 @@ void Device::serviceDetailsDiscovered(QLowEnergyService::ServiceState newState)
                      << " - value: " << ch.value();
             letter = ch.value().at(0);
             if (ch.value().at(0) != '.')
-                qDebug() << "\t\t\t\t\tNEW LETTER: " << ch.value();
+                qDebug() << "NEW LETTER on charac value: " << ch.value();
         }
         else if (ch.uuid().toUInt16() == 4418) { //rx Sketch characteristic
             service->writeCharacteristic(ch, QByteArray::fromHex("1"),QLowEnergyService::WriteWithoutResponse);
@@ -153,6 +144,7 @@ void Device::serviceDetailsDiscovered(QLowEnergyService::ServiceState newState)
     delete service;
 }
 
+// Returns the new letter if it exists, otherwise it returns a comma.
 char Device::newLetter()
 {
     if (letter != ',') {
@@ -165,27 +157,24 @@ char Device::newLetter()
     return letter;
 }
 
-void Device::errorReceived(QLowEnergyController::Error)
+// Function when an error with the BLE SmartPen happens
+void Device::onErrorReceived(QLowEnergyController::Error)
 {
     qDebug() << "Error: " << controller->errorString();;
 }
 
-void Device::deviceDisconnected()
+// Function when the SmartPen is disconnected
+void Device::onDeviceDisconnected()
 {
     qDebug() << "Device disconnected";
 }
 
-void Device::stateChanged(QLowEnergyController::ControllerState state)
+// Function when change the BLE controller state
+void Device::onStateChanged(QLowEnergyController::ControllerState state)
 {
     if (state == QLowEnergyController::UnconnectedState) {
-        qDebug() << state << "\n\n";
+        qDebug() << state;
         emit disconnected();
         emit readDone();
     }
-}
-
-
-bool Device::isBTEnabled()
-{
-    return discoveryAgent->isActive();
 }
