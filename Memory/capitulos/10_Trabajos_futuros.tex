@@ -32,6 +32,14 @@ La solución sería encontrar el problema que desemboca en la desconexión
 y que parte de la librería mencionada y el stack de protocolos \textit{bluetooth}
 de \textit{linux}.
 
+Ocasionalmente la interfaz de usuario sufre problemas de corrupción de memoria.
+Son tan raros que trazarlos es muy complicado y no he sido capaz de entender la
+causa. Este es un problema que queda pendiente a resolver al no disponer de más
+tiempo.
+Para resolverlo, el primer paso podría ser utilizar \textit{Valgrind}
+para dar con el origen del problema, que con total seguridad, será de nuevo,
+algo respectivo a la librería mencionada o a la gestión de \textit{QThread}.
+
 Lo cual nos lleva a otra posible mejora y es la implementación de la interfaz
 para \textit{Windows} o \textit{macOS}. Me gustaría poder haberla realizado, pero el tiempo
 no alcanza para más y dado que trabajo habitualmente en \textit{linux},
