@@ -256,7 +256,7 @@ void MainWindow::setToolTips()
 
 void MainWindow::setStartupImage()
 {
-    QPixmap penImage("./images/placeholderPen.png");
+    QPixmap penImage("./images/SmartPen4.png");
 
     ui->StartupImage->setPixmap(penImage.scaled(ui->StartupImage->width(),
                                                 ui->StartupImage->height(),

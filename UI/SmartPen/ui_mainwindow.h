@@ -743,7 +743,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -762,8 +762,8 @@ public:
         ButtonBlackboard->setText(QCoreApplication::translate("MainWindow", "Blackboard...", nullptr));
         ButtonAboutDev->setText(QCoreApplication::translate("MainWindow", "About...", nullptr));
         StartupImage->setText(QString());
-        ProjectDescription->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"justify\"><br/></p><p align=\"justify\">According to the function the text is supposed to</p><p align=\"justify\">be started from the bottom left but it starts too low and</p><p align=\"justify\">left. I know I can find a point by trial error so it doesn\342\200\231t gets</p><p align=\"justify\">cut off- you can -20 to the height and it will be fine enough</p><p align=\"justify\">for this one. But it will only fix this specific text! It wont be</p><p align=\"justify\">the same for any label with a different size or text or font.</p></body></html>", nullptr));
-        StartupTitle->setText(QCoreApplication::translate("MainWindow", "DeepPen Software", nullptr));
+        ProjectDescription->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"justify\"><br/></p><p align=\"justify\"><br/><br/></p><p align=\"justify\">The SmartPen is a tool capable of detecting letters</p><p align=\"justify\">by using a DeepLearning model.</p><p align=\"justify\">That is the principle of this device, however it is full</p><p align=\"justify\">of potential and thanks to this user interface you</p><p align=\"justify\">will be able to access all the functionalities</p><p align=\"justify\">that are created for it.</p></body></html>", nullptr));
+        StartupTitle->setText(QCoreApplication::translate("MainWindow", "SmartPen Software", nullptr));
         DevName->setText(QCoreApplication::translate("MainWindow", "By Antonio Priego Raya", nullptr));
         Written->setText(QCoreApplication::translate("MainWindow", "Written:", nullptr));
         recognisedLetters->setText(QString());
