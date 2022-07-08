@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {5.3.2}Función de configuración del firmware}{40}{subsection.5.3.2}%
 \contentsline {subsubsection}{\numberline {5.3.2.1}Configuración \textit {Bluetooth} y de sensores}{40}{subsubsection.5.3.2.1}%
 \contentsline {subsubsection}{\numberline {5.3.2.2}Configuración para la red neuronal}{41}{subsubsection.5.3.2.2}%
-\contentsline {subsection}{\numberline {5.3.3}Función cíclica del firmware\textsuperscript {\cite {andriyadimw,petewardenmw}}}{42}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.3}Función cíclica del firmware}{42}{subsection.5.3.3}%
 \contentsline {chapter}{\numberline {6}Red Neuronal}{45}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Planificación}{45}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Elección de framework y librerías}{45}{subsection.6.1.1}%
@@ -50,9 +50,9 @@
 \contentsline {section}{\numberline {7.3}Implementación}{55}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Traspaso del diseño a \textit {QT creator}}{55}{section.7.4}%
 \contentsline {section}{\numberline {7.5}Configuración de la interfaz}{56}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Gestión de lectura del microcontrolador}{56}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Lectura de la característica \textit {Bluetooth Low Energy}}{56}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Lectura del \textit {puerto serie}}{57}{subsection.7.6.2}%
+\contentsline {section}{\numberline {7.6}Gestión de lectura del microcontrolador}{57}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Lectura de la característica \textit {Bluetooth Low Energy}}{57}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Lectura del \textit {puerto serie}}{58}{subsection.7.6.2}%
 \contentsline {chapter}{\numberline {8}Encapsulado}{59}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Herramientas utilizadas}{59}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Implementación}{59}{section.8.2}%
@@ -69,13 +69,13 @@
 \contentsline {section}{\numberline {A.4}Definición de micro-operaciones en el firmware del microcontrolador}{72}{section.1.Alph1.4}%
 \contentsline {section}{\numberline {A.5}Cambiar la orientación de la placa}{72}{section.1.Alph1.5}%
 \contentsline {chapter}{\numberline {B}Red neuronal}{73}{appendix.1.Alph2}%
-\contentsline {section}{\numberline {B.1}Ajuste para poder utilizar el recolector de muestras de \textit {Pete Warden}\textsuperscript {\cite {petewardenmw}}}{73}{section.1.Alph2.1}%
+\contentsline {section}{\numberline {B.1}Ajuste para poder utilizar el recolector de muestras de \textit {Pete Warden}}{73}{section.1.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Asignación incorrecta de índices en el recolector de muestras}{73}{section.1.Alph2.2}%
 \contentsline {section}{\numberline {B.3}El recolector de muestras elimina varias muestras al borrar una}{73}{section.1.Alph2.3}%
 \contentsline {section}{\numberline {B.4}Descripción de capas \textit {Keras} empleadas para la implementación de la red neuronal}{74}{section.1.Alph2.4}%
 \contentsline {section}{\numberline {B.5}Experimentación red neuronal}{76}{section.1.Alph2.5}%
-\contentsline {subsection}{\numberline {B.5.1}Diseño de la red neuronal}{76}{subsection.1.Alph2.5.1}%
-\contentsline {subsection}{\numberline {B.5.2}Entrenamiento de la red neuronal}{77}{subsection.1.Alph2.5.2}%
+\contentsline {subsection}{\numberline {B.5.1}Estructura de la red neuronal}{76}{subsection.1.Alph2.5.1}%
+\contentsline {subsection}{\numberline {B.5.2}Entrenamiento de la red neuronal}{78}{subsection.1.Alph2.5.2}%
 \contentsline {chapter}{\numberline {C}Interfaz de usuario}{79}{appendix.1.Alph3}%
 \contentsline {section}{\numberline {C.1}Permisos uso del puerto del microcontrolador (Linux)}{79}{section.1.Alph3.1}%
 \contentsline {section}{\numberline {C.2}Acceso al puerto serie en QT (Linux)}{79}{section.1.Alph3.2}%

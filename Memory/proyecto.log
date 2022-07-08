@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.23)  7 JUL 2022 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.12.23)  8 JUL 2022 17:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,10 +668,6 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 ) (/home/tony/Universidad/TFG/Memory/proyecto.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-
-
-LaTeX Warning: Label `encapsulado' multiply defined.
-
 )
 \openout1 = `proyecto.aux'.
 
@@ -948,17 +944,17 @@ LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <14.4> not available
  [21
 
 ]
-<capturas/esquemaPerceptron.png, id=622, 406.51875pt x 421.575pt>
+<capturas/esquemaPerceptron.png, id=618, 406.51875pt x 421.575pt>
 File: capturas/esquemaPerceptron.png Graphic file (type png)
 <use capturas/esquemaPerceptron.png>
 Package pdftex.def Info: capturas/esquemaPerceptron.png  used on input line 55.
 (pdftex.def)             Requested size: 90.0pt x 93.33215pt.
-<capturas/esquemaMLPerceptron.png, id=623, 1351.0475pt x 502.87875pt>
+<capturas/esquemaMLPerceptron.png, id=619, 1351.0475pt x 502.87875pt>
 File: capturas/esquemaMLPerceptron.png Graphic file (type png)
 <use capturas/esquemaMLPerceptron.png>
 Package pdftex.def Info: capturas/esquemaMLPerceptron.png  used on input line 57.
 (pdftex.def)             Requested size: 270.0pt x 100.49722pt.
-<capturas/CNN.png, id=627, 1027.84pt x 451.6875pt>
+<capturas/CNN.png, id=623, 1027.84pt x 451.6875pt>
 File: capturas/CNN.png Graphic file (type png)
 <use capturas/CNN.png>
 Package pdftex.def Info: capturas/CNN.png  used on input line 83.
@@ -981,7 +977,7 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 78.
 
-<capturas/ganttFixed.png, id=697, 1520.68124pt x 391.4625pt>
+<capturas/ganttFixed.png, id=693, 1520.68124pt x 391.4625pt>
 File: capturas/ganttFixed.png Graphic file (type png)
 <use capturas/ganttFixed.png>
 Package pdftex.def Info: capturas/ganttFixed.png  used on input line 80.
@@ -990,7 +986,7 @@ Package pdftex.def Info: capturas/ganttFixed.png  used on input line 80.
 LaTeX Warning: Float too large for page by 79.4004pt on input line 82.
 
 [28] [29 </home/tony/Universidad/TFG/Memory/capturas/ganttFixed.png>] [30]
-Overfull \hbox (1.35727pt too wide) in paragraph at lines 145--156
+Overfull \hbox (1.35727pt too wide) in paragraph at lines 146--159
 [][] 
  []
 
@@ -1002,7 +998,7 @@ Cap\'{\i }tulo 4.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 32.
 
-<capturas/EstructuraDiseño.png, id=724, 1127.21124pt x 796.9775pt>
+<capturas/EstructuraDiseño.png, id=720, 1127.21124pt x 796.9775pt>
 File: capturas/EstructuraDiseño.png Graphic file (type png)
 <use capturas/EstructuraDiseño.png>
 Package pdftex.def Info: capturas/EstructuraDiseño.png  used on input line 34.
@@ -1023,75 +1019,45 @@ Underfull \vbox (badness 3428) has occurred while \output is active []
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <12> not available
 (Font)              Font shape `T1/pbk/l/it' tried instead on input line 90.
  [37] [38]
-<capturas/BleLetterSenderService.png, id=770, 770.88pt x 489.32813pt>
+<capturas/BleLetterSenderService.png, id=771, 770.88pt x 489.32813pt>
 File: capturas/BleLetterSenderService.png Graphic file (type png)
 <use capturas/BleLetterSenderService.png>
-Package pdftex.def Info: capturas/BleLetterSenderService.png  used on input line 200.
+Package pdftex.def Info: capturas/BleLetterSenderService.png  used on input line 207.
 (pdftex.def)             Requested size: 360.0pt x 228.51334pt.
 
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
  [39 </home/tony/Universidad/TFG/Memory/capturas/BleLetterSenderService.png>]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <10.95> not available
-(Font)              Font shape `T1/pbk/l/it' tried instead on input line 261.
+(Font)              Font shape `T1/pbk/l/it' tried instead on input line 268.
  [40] [41]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 343.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 343.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 343.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 343.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 343.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 343.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <9> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 343.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 343.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 343.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 343.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 343.
-
-<capturas/DiagramaFlujoLeds.png, id=805, 1462.46375pt x 1021.8175pt>
+<capturas/DiagramaFlujoLeds.png, id=807, 1462.46375pt x 1021.8175pt>
 File: capturas/DiagramaFlujoLeds.png Graphic file (type png)
 <use capturas/DiagramaFlujoLeds.png>
-Package pdftex.def Info: capturas/DiagramaFlujoLeds.png  used on input line 351.
+Package pdftex.def Info: capturas/DiagramaFlujoLeds.png  used on input line 358.
 (pdftex.def)             Requested size: 295.20264pt x 206.24648pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [42] [43 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoLeds.png>]
-<capturas/DiagramaFlujoFirmware.png, id=819, 1791.69376pt x 2816.5225pt>
+<capturas/DiagramaFlujoFirmware.png, id=821, 1791.69376pt x 2816.5225pt>
 File: capturas/DiagramaFlujoFirmware.png Graphic file (type png)
 <use capturas/DiagramaFlujoFirmware.png>
-Package pdftex.def Info: capturas/DiagramaFlujoFirmware.png  used on input line 407.
+Package pdftex.def Info: capturas/DiagramaFlujoFirmware.png  used on input line 414.
 (pdftex.def)             Requested size: 288.0011pt x 452.71568pt.
 ) (/home/tony/Universidad/TFG/Memory/capitulos/06_Red_neuronal.tex [44 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoFirmware.png>]
 Cap\'{\i }tulo 6.
 [45
 
 ] [46]
-<capturas/conv2D.png, id=841, 1018.40475pt x 579.3645pt>
+<capturas/conv2D.png, id=843, 1018.40475pt x 579.3645pt>
 File: capturas/conv2D.png Graphic file (type png)
 <use capturas/conv2D.png>
 Package pdftex.def Info: capturas/conv2D.png  used on input line 86.
 (pdftex.def)             Requested size: 360.0pt x 204.80505pt.
  [47 </home/tony/Universidad/TFG/Memory/capturas/conv2D.png>]
-<capturas/esquemaRN.png, id=851, 1684.2925pt x 682.55pt>
+<capturas/esquemaRN.png, id=853, 1684.2925pt x 682.55pt>
 File: capturas/esquemaRN.png Graphic file (type png)
 <use capturas/esquemaRN.png>
 Package pdftex.def Info: capturas/esquemaRN.png  used on input line 136.
@@ -1111,16 +1077,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ] [54]
 LaTeX Font Info:    Font shape `T1/pbk/m/it' in size <14.4> not available
 (Font)              Font shape `T1/pbk/l/it' tried instead on input line 134.
- [55]
-Underfull \vbox (badness 1275) has occurred while \output is active []
-
- [56] [57]
-<capturas/DiagramaFlujoUI.png, id=945, 2452.16125pt x 2910.875pt>
+<capturas/DiagramaFlujoUI.png, id=915, 2452.16125pt x 2910.875pt>
 File: capturas/DiagramaFlujoUI.png Graphic file (type png)
 <use capturas/DiagramaFlujoUI.png>
-Package pdftex.def Info: capturas/DiagramaFlujoUI.png  used on input line 259.
+Package pdftex.def Info: capturas/DiagramaFlujoUI.png  used on input line 145.
 (pdftex.def)             Requested size: 360.0pt x 427.3294pt.
-) (/home/tony/Universidad/TFG/Memory/capitulos/08_Encapsulado.tex [58 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoUI.png>]
+ [55] [56 </home/tony/Universidad/TFG/Memory/capturas/DiagramaFlujoUI.png>]
+Underfull \vbox (badness 3118) has occurred while \output is active []
+
+ [57]) (/home/tony/Universidad/TFG/Memory/capitulos/08_Encapsulado.tex [58]
 Cap\'{\i }tulo 8.
 [59
 
@@ -1134,12 +1099,7 @@ Cap\'{\i }tulo 10.
 
 ]) (/home/tony/Universidad/TFG/Memory/capitulos/11_Conclusiones.tex [64]
 Cap\'{\i }tulo 11.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 22--207
-
- []
-
-[65
+) [65
 
 ] (/home/tony/Universidad/TFG/Memory/proyecto.bbl [66
 
@@ -1246,7 +1206,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--16
  []
 
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 19.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 19.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 19.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 19.
 [71
@@ -1254,39 +1218,13 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 ] [72]
 Ap\'{e}ndice B.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 77.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 77.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 77.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 77.
-LaTeX Font Info:    Font shape `T1/pbk/m/n' in size <10> not available
-(Font)              Font shape `T1/pbk/l/n' tried instead on input line 77.
 
-Overfull \hbox (10.00464pt too wide) in paragraph at lines 77--77
+Overfull \hbox (10.00464pt too wide) in paragraph at lines 76--76
 |[]\T1/pbk/l/n/14.4 Ajuste pa-ra po-der uti-li-zar el re-co-lec-tor de mues-
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mathsurround' on input line 77.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\z@' on input line 77.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 77.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 77.
-
-
-Overfull \hbox (3.61113pt too wide) in paragraph at lines 93--93
+Overfull \hbox (3.61113pt too wide) in paragraph at lines 92--92
 |[]\T1/pbk/l/n/14.4 El re-co-lec-tor de mues-tras eli-mi-na va-rias mues-
  []
 
@@ -1295,7 +1233,7 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
-Overfull \hbox (16.11076pt too wide) in paragraph at lines 110--112
+Overfull \hbox (16.11076pt too wide) in paragraph at lines 109--111
 []\T1/cmss/m/n/10.95 Las ca-pas uti-li-za-das du-ran-te la im-ple-men-ta-ci�n del mo-de-lo, son las siguientes$[]$: 
  []
 
@@ -1304,26 +1242,38 @@ Overfull \hbox (16.11076pt too wide) in paragraph at lines 110--112
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 157.
+               Default added (so using `tbp') on input line 156.
 
-<capturas/estructuraRNTF.png, id=1133, 602.25pt x 1555.8125pt>
+<capturas/estructuraRNTF.png, id=1136, 602.25pt x 1555.8125pt>
 File: capturas/estructuraRNTF.png Graphic file (type png)
 <use capturas/estructuraRNTF.png>
-Package pdftex.def Info: capturas/estructuraRNTF.png  used on input line 159.
-(pdftex.def)             Requested size: 251.9989pt x 650.99161pt.
+Package pdftex.def Info: capturas/estructuraRNTF.png  used on input line 158.
+(pdftex.def)             Requested size: 248.40088pt x 641.70937pt.
 
-LaTeX Warning: Float too large for page by 68.8327pt on input line 161.
+LaTeX Warning: Float too large for page by 63.81863pt on input line 160.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) [74] [75 </home/tony/Universidad/TFG/Memory/capturas/estructuraRNTF.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--215
-
+Overfull \hbox (3.52663pt too wide) in paragraph at lines 164--166
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[76] [77] [78
+[76]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [77]
+<capturas/accuracyMref.png, id=1200, 682.55pt x 437.635pt>
+File: capturas/accuracyMref.png Graphic file (type png)
+<use capturas/accuracyMref.png>
+Package pdftex.def Info: capturas/accuracyMref.png  used on input line 289.
+(pdftex.def)             Requested size: 161.9989pt x 103.86594pt.
+<capturas/accuracyMlrMayor.png, id=1201, 727.71875pt x 463.7325pt>
+File: capturas/accuracyMlrMayor.png Graphic file (type png)
+<use capturas/accuracyMlrMayor.png>
+Package pdftex.def Info: capturas/accuracyMlrMayor.png  used on input line 291.
+(pdftex.def)             Requested size: 161.9989pt x 103.23145pt.
+ [78 </home/tony/Universidad/TFG/Memory/capturas/accuracyMref.png> </home/tony/Universidad/TFG/Memory/capturas/accuracyMlrMayor.png>]
 Ap\'{e}ndice C.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
@@ -1331,108 +1281,130 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 File: lstlang2.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
-) [79]
-Overfull \hbox (36.08597pt too wide) in paragraph at lines 299--302
+) [79
+
+]
+Overfull \hbox (36.08597pt too wide) in paragraph at lines 357--360
 \T1/cmtt/m/n/10.95 org / c / qt / qtconnectivity / + / 233087 / 3 / src / bluetooth / qlowenergycontroller _
  []
 
 
-Overfull \hbox (4.95024pt too wide) in paragraph at lines 309--309
+Overfull \hbox (4.95024pt too wide) in paragraph at lines 367--367
 |[]\T1/pbk/l/n/14.4 Error de per-mi-sos al lan-zar la in-ter-faz de usua-
  []
 
 [80]
-<capturas/DisenoUsuario2.png, id=1213, 1445.4pt x 813.0375pt>
+<capturas/DisenoUsuario2.png, id=1229, 1445.4pt x 813.0375pt>
 File: capturas/DisenoUsuario2.png Graphic file (type png)
 <use capturas/DisenoUsuario2.png>
-Package pdftex.def Info: capturas/DisenoUsuario2.png  used on input line 339.
+Package pdftex.def Info: capturas/DisenoUsuario2.png  used on input line 397.
 (pdftex.def)             Requested size: 1445.39648pt x 813.03552pt.
-<capturas/Interfaz.png, id=1214, 1015.795pt x 604.2575pt>
+<capturas/Interfaz.png, id=1230, 1015.795pt x 604.2575pt>
 File: capturas/Interfaz.png Graphic file (type png)
 <use capturas/Interfaz.png>
-Package pdftex.def Info: capturas/Interfaz.png  used on input line 345.
+Package pdftex.def Info: capturas/Interfaz.png  used on input line 403.
 (pdftex.def)             Requested size: 1015.79253pt x 604.25603pt.
 
 
-LaTeX Warning: Float too large for page by 23.02937pt on input line 347.
+LaTeX Warning: Float too large for page by 23.02937pt on input line 405.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [81 </home/tony/Universidad/TFG/Memory/capturas/DisenoUsuario2.png>] [82 </home/tony/Universidad/TFG/Memory/capturas/Interfaz.png>]
 Ap\'{e}ndice D.
-<capturas/cilindroAlto.png, id=1242, 220.825pt x 532.99126pt>
+<capturas/cilindroAlto.png, id=1258, 220.825pt x 532.99126pt>
 File: capturas/cilindroAlto.png Graphic file (type png)
 <use capturas/cilindroAlto.png>
-Package pdftex.def Info: capturas/cilindroAlto.png  used on input line 353.
+Package pdftex.def Info: capturas/cilindroAlto.png  used on input line 411.
 (pdftex.def)             Requested size: 66.59912pt x 160.74442pt.
-<capturas/slotBatería.png, id=1245, 417.56pt x 461.725pt>
+<capturas/slotBatería.png, id=1261, 417.56pt x 461.725pt>
 File: capturas/slotBatería.png Graphic file (type png)
 <use capturas/slotBatería.png>
-Package pdftex.def Info: capturas/slotBatería.png  used on input line 355.
+Package pdftex.def Info: capturas/slotBatería.png  used on input line 413.
 (pdftex.def)             Requested size: 145.79956pt x 161.21867pt.
-<capturas/cilindroBajo.png, id=1248, 227.85126pt x 242.9075pt>
+<capturas/cilindroBajo.png, id=1264, 227.85126pt x 242.9075pt>
 File: capturas/cilindroBajo.png Graphic file (type png)
 <use capturas/cilindroBajo.png>
-Package pdftex.def Info: capturas/cilindroBajo.png  used on input line 357.
+Package pdftex.def Info: capturas/cilindroBajo.png  used on input line 415.
 (pdftex.def)             Requested size: 143.9978pt x 153.51436pt.
-<capturas/clip.png, id=1251, 244.915pt x 167.62625pt>
+<capturas/clip.png, id=1267, 244.915pt x 167.62625pt>
 File: capturas/clip.png Graphic file (type png)
 <use capturas/clip.png>
-Package pdftex.def Info: capturas/clip.png  used on input line 363.
+Package pdftex.def Info: capturas/clip.png  used on input line 421.
 (pdftex.def)             Requested size: 97.20154pt x 66.52496pt.
-<capturas/punta.png, id=1254, 173.64874pt x 180.675pt>
+<capturas/punta.png, id=1270, 173.64874pt x 180.675pt>
 File: capturas/punta.png Graphic file (type png)
 <use capturas/punta.png>
-Package pdftex.def Info: capturas/punta.png  used on input line 365.
+Package pdftex.def Info: capturas/punta.png  used on input line 423.
 (pdftex.def)             Requested size: 64.79736pt x 67.42212pt.
-<capturas/semiEsfera.png, id=1257, 165.61874pt x 153.57375pt>
+<capturas/semiEsfera.png, id=1273, 165.61874pt x 153.57375pt>
 File: capturas/semiEsfera.png Graphic file (type png)
 <use capturas/semiEsfera.png>
-Package pdftex.def Info: capturas/semiEsfera.png  used on input line 367.
+Package pdftex.def Info: capturas/semiEsfera.png  used on input line 425.
 (pdftex.def)             Requested size: 75.60242pt x 70.10345pt.
-<capturas/SmartPen.png, id=1260, 1247.66125pt x 3017.2725pt>
+<capturas/SmartPen.png, id=1276, 1247.66125pt x 3017.2725pt>
 File: capturas/SmartPen.png Graphic file (type png)
 <use capturas/SmartPen.png>
-Package pdftex.def Info: capturas/SmartPen.png  used on input line 374.
+Package pdftex.def Info: capturas/SmartPen.png  used on input line 432.
 (pdftex.def)             Requested size: 172.79846pt x 417.85733pt.
-<capturas/SmartPenTrasero.png, id=1261, 859.21pt x 3399.70125pt>
+<capturas/SmartPenTrasero.png, id=1277, 859.21pt x 3399.70125pt>
 File: capturas/SmartPenTrasero.png Graphic file (type png)
 <use capturas/SmartPenTrasero.png>
-Package pdftex.def Info: capturas/SmartPenTrasero.png  used on input line 376.
+Package pdftex.def Info: capturas/SmartPenTrasero.png  used on input line 434.
 (pdftex.def)             Requested size: 104.39758pt x 413.03032pt.
 [83
 
- </home/tony/Universidad/TFG/Memory/capturas/cilindroAlto.png> </home/tony/Universidad/TFG/Memory/capturas/slotBatería.png> </home/tony/Universidad/TFG/Memory/capturas/cilindroBajo.png> </home/tony/Universidad/TFG/Memory/capturas/clip.png> </home/tony/Universidad/TFG/Memory/capturas/punta.png> </home/tony/Universidad/TFG/Memory/capturas/semiEsfera.png>]) [84 </home/tony/Universidad/TFG/Memory/capturas/SmartPen.png> </home/tony/Universidad/TFG/Memory/capturas/SmartPenTrasero.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
+ </home/tony/Universidad/TFG/Memory/capturas/cilindroAlto.png> </home/tony/Universidad/TFG/Memory/capturas/slotBatería.png> </home/tony/Universidad/TFG/Memory/capturas/cilindroBajo.png> </home/tony/Universidad/TFG/Memory/capturas/clip.png> </home/tony/Universidad/TFG/Memory/capturas/punta.png> </home/tony/Universidad/TFG/Memory/capturas/semiEsfera.png>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84 </home/tony/Universidad/TFG/Memory/capturas/SmartPen.png> </home/tony/Universidad/TFG/Memory/capturas/SmartPenTrasero.png>]
+<imagenes/GitHubIcon.png, id=1303, 256.96pt x 256.96pt>
+File: imagenes/GitHubIcon.png Graphic file (type png)
+<use imagenes/GitHubIcon.png>
+Package pdftex.def Info: imagenes/GitHubIcon.png  used on input line 220.
+(pdftex.def)             Requested size: 90.0pt x 90.00008pt.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 222.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 222.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 13.24796pt on input line 222.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 222.
+<imagenes/QRGitHub.png, id=1305, 301.125pt x 301.125pt>
+File: imagenes/QRGitHub.png Graphic file (type png)
+<use imagenes/QRGitHub.png>
+Package pdftex.def Info: imagenes/QRGitHub.png  used on input line 225.
+(pdftex.def)             Requested size: 90.0pt x 89.99817pt.
+ [85 </home/tony/Universidad/TFG/Memory/imagenes/GitHubIcon.png> </home/tony/Universidad/TFG/Memory/imagenes/QRGitHub.png>] [86
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
  (/home/tony/Universidad/TFG/Memory/proyecto.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `proyecto.out' has not changed.
-(rerunfilecheck)             Checksum: 10C44BDBD9302040628D2E24519F8877;7226.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
+(rerunfilecheck)             Checksum: 39BAA851514499F7D36F938E26CD440C;7191.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 22610 strings out of 481239
- 404821 string characters out of 5920376
- 854531 words of memory out of 5000000
- 36937 multiletter control sequences out of 15000+600000
- 648094 words of font info for 146 fonts, out of 8000000 for 9000
+ 22637 strings out of 481239
+ 405486 string characters out of 5920376
+ 853602 words of memory out of 5000000
+ 36951 multiletter control sequences out of 15000+600000
+ 632678 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,12n,81p,989b,1434s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on /home/tony/Universidad/TFG/Memory/proyecto.pdf (88 pages, 4853577 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/bookman/ubkli8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on /home/tony/Universidad/TFG/Memory/proyecto.pdf (90 pages, 4966441 bytes).
 PDF statistics:
- 1445 PDF objects out of 1728 (max. 8388607)
- 1265 compressed objects within 13 object streams
- 340 named destinations out of 1000 (max. 500000)
- 842 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1491 PDF objects out of 1728 (max. 8388607)
+ 1296 compressed objects within 13 object streams
+ 347 named destinations out of 1000 (max. 500000)
+ 862 words of extra memory for PDF output out of 10000 (max. 10000000)
 

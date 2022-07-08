@@ -73,11 +73,10 @@ Aunque continúan sin obtenerse trazados correctos del movimiento.
 
 
 \chapter{Red neuronal}
-\section{Ajuste para poder utilizar el recolector de muestras de
-\textit{Pete Warden}\textsuperscript{\cite{petewardenmw}}\label{PWchrome}}
+\section{Ajuste para poder utilizar el recolector de muestras de \textit{Pete Warden}\label{PWchrome}}
 Es necesario hacer uso del recolector de muestras, utilizar \textit{Google Chrome}
 y activar la flag para desarrolladores '\textit{Experimental Web Platform features}'
-activa en '\textit{chrome://flags/}'.
+activa en '\textit{chrome://flags/}'\textsuperscript{\cite{petewardenmw}}.
 
 
 \section{Asignación incorrecta de índices en el recolector de muestras\label{borraIndices}}
@@ -156,63 +155,52 @@ son las siguientes\textsuperscript{\cite{keras}}:
 
 \begin{figure}[]
     \centering
-    \includegraphics[width=0.7\textwidth]{capturas/estructuraRNTF.png}\\[-0,35cm]
+    \includegraphics[width=0.69\textwidth]{capturas/estructuraRNTF.png}\\[-0,2cm]
     \caption{Estructura del modelo generado en \textit{TensorFlow}\label{estRN}}
 \end{figure}
 
 La anterior \textit{figura \ref{estRN}} es consecuencia del siguiente código:
-\begin{lstlisting}[language=python, title=Fragmento de \textit{Train.ipynb}]
-    ############## MAKING THE MODEL ###############
+\begin{lstlisting}[language=python, title=Fragmento de \href{https://github.com/AntonioPriego/SmartPen/blob/main/Train/Train.ipynb}{\textit{Train.ipynb}}]
+################# MAKING THE MODEL ###############
 
-    def make_model(input_shape, num_classes):
-      model = models.Sequential()
-    
-      # Rescaling
-      model.add( layers.Rescaling(1.0 / 255) )
-      # Block 1
-      model.add( layers.Conv2D(16, 5, strides=2, input_shape=input_shape) )
-      model.add( layers.BatchNormalization() )
-      model.add( layers.Activation("relu") )
-      model.add( layers.Dropout(0.5) )
-      # Block 2
-      model.add( layers.Conv2D(32, 5, strides=2, padding="same") )
-      model.add( layers.BatchNormalization() )
-      model.add( layers.Activation("relu") )
-      model.add( layers.Dropout(0.5) )
-      # Block 3
-      model.add( layers.Conv2D(64, 3, strides=1, padding="same") )
-      model.add( layers.BatchNormalization() )
-      model.add( layers.Activation("relu") )
-      model.add( layers.Dropout(0.5) )
-      # Pooling + another Dropout
-      model.add( layers.GlobalAveragePooling2D() )
-      model.add( layers.Dropout(0.5) )
-      # Softmax
-      model.add( layers.Dense(num_classes, activation="softmax") )
-    
-    
-      return model
-    
-    model = make_model(input_shape=(IMAGE_WIDTH, IMAGE_HEIGHT, 3),
-                          num_classes=26)
-    model.build(input_shape=(None, IMAGE_WIDTH, IMAGE_HEIGHT, 3))
-    model.summary()
-    keras.utils.plot_model(model, show_shapes=True)
+def make_model(input_shape, num_classes):
+    model = models.Sequential()
+
+    # Rescaling
+    model.add( layers.Rescaling(1.0 / 255) )
+    # Block 1
+    model.add( layers.Conv2D(16, 5, strides=2, input_shape=input_shape) )
+    model.add( layers.BatchNormalization() )
+    model.add( layers.Activation("relu") )
+    model.add( layers.Dropout(0.45) )
+    # Block 2
+    model.add( layers.Conv2D(32, 5, strides=2, padding="same") )
+    model.add( layers.BatchNormalization() )
+    model.add( layers.Activation("relu") )
+    model.add( layers.Dropout(0.45) )
+    # Block 3
+    model.add( layers.Conv2D(64, 3, strides=1, padding="same") )
+    model.add( layers.BatchNormalization() )
+    model.add( layers.Activation("relu") )
+    model.add( layers.Dropout(0.45) )
+    # Pooling + another Dropout
+    model.add( layers.GlobalAveragePooling2D() )
+    model.add( layers.Dropout(0.45) )
+    # Softmax
+    model.add( layers.Dense(num_classes, activation="softmax") )
+
+
+    return model
+
+model = make_model(input_shape=(IMAGE_WIDTH, IMAGE_HEIGHT, 3),
+                        num_classes=NUM_CLASSES)
+model.build(input_shape=(None, IMAGE_WIDTH, IMAGE_HEIGHT, 3))
+model.summary()
+keras.utils.plot_model(model, show_shapes=True)
 \end{lstlisting}
 
 \section{Experimentación red neuronal}
-\subsection{Diseño de la red neuronal\label{expRN}}
-{\color{red} Hablar sobre los cambios probados en la red neuronal y
-sus resultados. Carpeta Train->Análisis\\\\
-Cambiar el tamaño del kernel de las capas Conv2D de 3 a 4, resulta muy efectivo,
-a costa, evidentemente, de aumentar el tamaño que ocupa el modelo.\\
-Al pasar de 4 a 5, el modelo arroja unos datos de efectividad teóricos extremadamente
-buenos, alcanzando cifras de precisión mucho más altas con menos epochs.
-En general, podemos extrapolar que, a mayor tamaño del kernel, mejor precisión pero
-mayor tamaño del modelo. En nuestro caso no llega a ser un problema, ya que, aunque
-estamos usando un dispositivo de memoria limitada, no llega a ocuparse toda la memoria
-del mismo, al menos por ahora.}
-
+\subsection{Estructura de la red neuronal\label{expRN}}
 Cada uno de los modelos o cambios con los que se ha experimentado, son
 pequeñas iteraciones o pequeñas variaciones respecto del modelo base.
 Creado a partir del estudio de otros modelos para tareas parecidas.
@@ -228,12 +216,82 @@ para obtener mejores predicciones que el resto y equivalentemente, las letras
 más sencillas obtienen mejores predicciones sobre el resto, cuando se analizan
 muestras sencillas.
 
-\subsection{Entrenamiento de la red neuronal\label{expTrainRN}}
-{\color{red} ENTRENAMIENTO: Hablar de \textit{epochs}, \textit{learning\_rate},
-\textit{optimizadores}, etc.}
-{\color{red} ENTRENAMIENTO: Resultados del testeo obtenidos de los modelos
-Carpeta Train->Análisis.}
+También se ha estudiado el comportamiento del tamaño del \textit{kernel} en
+las capas \textit{Conv2D}. Se ha experimentado para tamaños (cuadrados) de entre 3 a 5, ya
+que menos resultaría poco conveniente y más sería desproporcionado teniendo en
+cuenta que trabajamos con información espacial igual o inferior a 32x32.
+En general se ha observado que a mayor tamaño de kernel, se obtiene una mayor
+precisión en el testeo y si siente al probar el modelo, que funciona ligeramente
+mejor. A costa evidentemente de una mayor complejidad del modelo y por tanto
+de un mayor tamaño en memoria. Por lo que se ha optado por mantener en el
+modelo final tamaño de \textit{kernel} 5x5 en los dos primeros bloques de \textit{convolución}
+y de 3x3 en el último, ya que a esta capa llega información de dimensiones mucho menores
+(7x7). Sin embargo, la decisión de aumentar la complejidad del modelo, también
+implica aumentar el número de \textit{epochs} en la etapa de entrenamiento, para
+desentrañar mejor el comportamiento más adecuado de una estructura más compleja,
+aunque esto se tratará en la siguiente sección.
 
+Otro parámetro que se ha analizado es el número de bloques de convolución (explicados
+en la Sección \ref{disenioRN}), con solo dos, los resultados no son nada buenos, y
+añadiendo un cuarto, se obtienen resultados muy buenos pero concretamente en algunas
+letras hay clasificaciones erróneas, posiblemente debido a \textit{overfitting}
+(concepto introducido en Teoría \ref{ovYun}) y se obtienen buenos resultados en general,
+pero no suficientes para una buena experiencia.
+
+Se experimentó con la capa \textit{BatchNormalization} de los bloques de convolución.
+Al eliminar esta capa de los bloques, se obtienen en fase de testeo, clasificaciones
+correctas, pero con una precisión mucho menor, llegando a alcanzar en algunos casos,
+la mitad de precisión que con el modelo base. Como cabía esperar, la normalización de
+las entradas resulta muy útil para mejorar la precisión, y aunque no se aprecie en
+el testeo, también proporciona un entrenamiento más rápido.
+
+Con el resto de capas del bloque de convolución, no se ha experimentado, porque
+son capas manifiestamente indispensables.
+
+Aunque si bien, sí que se ha experimentado con los valores de \textit{Dropout}, estudiándolos
+para valores de $0.4$ a $0.6$, ya que para el resto de valores, resulta un \textit{dropout}
+demasiado restrictivo o demasiado laxo. Obteniendo los mejores resultados para 0.45, aunque
+si bien, las diferencias eran prácticamente indistinguibles durante su uso.
+
+\subsection{Entrenamiento de la red neuronal\label{expTrainRN}}
+En esta fase, los cambios siguen siendo muy relevantes para el desempeño de la red neuronal,
+sin embargo hay menos parámetros que estudiar.
+
+Yo me he centrado principalmente en las \textit{epochs} y el \textit{learning rate}, aunque
+también he probado someramente los \textit{optimizadores}.
+Las \textit{epochs} son las iteraciones que se darán en el algoritmo de entrenamiento.
+A más epochs, mayor será la profundidad en el entrenamiento.
+Esto no quiere decir que si empleamos el doble de \textit{epochs}, consigamos el doble
+de precisión, no es un fenómeno lineal, sino que el modelo presenta un techo
+alcanzable y por más que se entrene, no van a obtenerse mejores resultados. Por lo que
+la clave es encontrar un número de \textit{epochs} que resulte en un buen entrenamiento,
+pero sin emplear tiempo de más. En nuestro caso, para los modelos experimentales más complejos,
+se ha empleado un número mayor de \textit{epochs}, pero en general, ningún modelo ha seguido
+presentando mejoras notorias más allá de las 100 \textit{epochs}. Por tanto, se usará este valor.
+
+El segundo parámetro de estudio, ha sido el \textit{learning rate}, que simplificándolo,
+sería el valor que determina el progreso de entrenamiento que se hace en cada \textit{epoch}.
+Un \textit{learning rate} más alto, se traduce en un entrenamiento que escala mejor con pocas
+\textit{epochs}, pero que está más limitado a alcanzar el resultado óptimo del modelo;
+análogamente, un \textit{learning rate} más bajo, resulta en un entrenamiento que
+escalará peor, pero que puede alcanzar un resultado potencial mejor, como ilustra la Figura \ref{lRate}.
+En nuestro caso se ha experimentado con valores de \textit{learning rate} entre $0.00095$ y $0.0015$
+ya que en muchos modelos estudiados y parecidos a este, se usa un valor cercano a $0.001$.
+y como nuestro modelo no es muy complejo, podemos permitirnos un escalado menor, ya que no llevará
+mucho tiempo entrenar al modelo y hay margen para aumentarlo sin problema. Por lo que
+nos quedamos con un \textit{learning rate} de $0.00095$.
+
+Respecto a los \textit{optimizadores}, se ha experimentado muy laxamente, así que para asegurar,
+nos quedamos con el \textit{optimizador} de referencia del modelo base.
+
+\begin{figure}[h]
+    \centering
+    \subfloat[\textit{learning rate 0.00095}]{\includegraphics[width=0.45\textwidth]{capturas/accuracyMref.png}}
+    \hfill
+    \subfloat[\textit{learning rate 0.0015}]{\includegraphics[width=0.45\textwidth]{capturas/accuracyMlrMayor.png}}
+    \caption{Escalado de \textit{accuracy} por \textit{epochs}\label{lRate}}
+\end{figure}
+{\small {\color{cyan}Azul}: Validación | {\color{orange}Naranja}: Entrenamiento. Mismo modelo, distinto \textit{learning rate}.}
 
 \chapter{Interfaz de usuario}
 \section{Permisos uso del puerto del microcontrolador (Linux)\label{pserie}}

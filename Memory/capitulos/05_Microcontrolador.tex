@@ -3,9 +3,9 @@
 En la planificación se recogerá la elección de equipo y herramientas de desarrollo
 previas al diseño.
 \subsection{Elección del microcontrolador}
-Como ya se especificó en la sección \textit{(\ref{reqHW})Requisitos hardware}
-necesitamos ciertas características inmutables. Para poder quedarnos con un
-microcontrolador, antes debemos hacer el ejercicio de búsqueda de algunos
+Como ya se especificó en la Sección \ref{reqHW} \textit{Requisitos hardware},
+son necesarias ciertas características inmutables. Para poder elegir un
+microcontrolador, antes se debe hacer el ejercicio de búsqueda de algunos
 candidatos y analizar sus características. La búsqueda se ha sustentado
 en encontrar dispositivos compatibles con \textit{TensorFlow Lite}.
 \begin{table}[h]
@@ -118,24 +118,31 @@ ser de interés.
 En esta sección se planteará estructuralmente y a nivel de funcionamiento,
 el firmware del controlador.
 \subsection{Estructura del firmware del controlador}
-El firmware se distribuirá en diferentes secciones, la principal,
-\textit{deep\_pen.ino} (extensión propia de \textit{Arduino}, empleada en
+El firmware se distribuirá en diferentes secciones.
+\href{https://github.com/AntonioPriego/SmartPen/blob/main/Sketch/smart_pen/smart_pen.ino}{\textit{smart\_pen.ino}}
+(extensión propia de \textit{Arduino}, empleada en
 el archivo principal de sus proyectos) incluirá todo lo relativo a la
 configuración previa de las características del microcontrolador y las
 habituales funciones \textit{setup()} y \textit{loop()}.
 
-En \textit{deep\_pen\_model\_data} encontraremos exclusivamente el modelo
+En
+\href{https://github.com/AntonioPriego/SmartPen/blob/main/Sketch/smart_pen/smart_pen_model_data.cpp}{\textit{smart\_pen\_model\_data}}
+encontraremos exclusivamente el modelo
 de la red neuronal entrenado y listo para funcionar en formato binario,
 dada la carencia de sistema de archivos.
 
 \textit{labels} será la sección que ocupe la gestión de las etiquetas del
 modelo; definición y traducción etiqueta a letra.
 
-El apartado \textit{rasterize\_stroke} rasterizará el movimiento recogido,
+El apartado
+\href{https://github.com/AntonioPriego/SmartPen/blob/main/Sketch/smart_pen/smart_pen_model_data.cpp}{\textit{rasterize\_stroke}}
+rasterizará el movimiento recogido,
 transformándolo en las imágenes que sirven como entrada para el modelo.
 
-Por último, \textit{stroke\_collector} estará reservado a la recolección
-del movimiento y la configuración del servicio \textit{Bluetooth}(\textit{BLE})
+Por último,
+\href{https://github.com/AntonioPriego/SmartPen/blob/main/Sketch/smart_pen/stroke_collector.cpp}{\textit{stroke\_collector}}
+estará reservado a la recolección
+del movimiento y la configuración del servicio \textit{Bluetooth} (\textit{BLE})
 vinculado a la recolección de muestras para el modelo.
 
 \subsection{Servicio \textit{Bluetooth}\label{servBLE}}
@@ -148,7 +155,7 @@ Se describirá, por tanto, solamente el servicio implementado de cero:
 Previo a la descripción del diseño, debemos entender cómo funciona esta versión
 bluetooth de bajo consumo.
 
-\begin{teoria}{Estructura del \textit{BLE}(\textit{Bluetooth Low Energy})\textsuperscript{\cite{BLEAndroid, BLEguide, BLEOreilly}}}
+\begin{teoria}{Estructura del \textit{BLE}(\textit{Bluetooth Low Energy})\textsuperscript{\cite{BLEAndroid}\cite{BLEguide}\cite{BLEOreilly}}}
     \color{mitexto}
     El funcionamiento de este bluetooth de bajo consumo es notoriamente
     disidente de la versión general, tanto que tenemos que hablar de una
@@ -318,7 +325,7 @@ Se deben establecer las micro-operaciones que se darán en el modelo
 para tener definido el repertorio en tiempo de ejecución que utilizará
 nuestro interprete\textsuperscript{\cite{intro-tensor-micro}}.
 Existe una alternativa que añade todas las micro-operaciones de forma genérica,
-a costa de un mayor uso de memoria. Para mayor profundización de la
+a costa de un mayor uso de memoria. Para mayor profundización en la
 implementación, consultar el apéndice \ref{firmwMO}.
 
 \begin{problemas}{Al cargar el firmware\, la placa deja de ser detectada}
@@ -340,10 +347,10 @@ uso del repertorio de micro-operaciones especificadas.\newline
 Y por último, inicializamos los led pins como salida, para poder hacer uso
 del led como indicativo de estado.
 
-\subsection{Función cíclica del firmware\textsuperscript{\cite{andriyadimw,petewardenmw}}}
+\subsection{Función cíclica del firmware}
 En esta función (denominada 'loop()' en el diseño \textit{Arduino}),
 será donde se establezca el código que se ejecutará persistentemente
-mientras la placa esté alimentada.
+mientras la placa esté alimentada\textsuperscript{\cite{andriyadimw}\cite{petewardenmw}}.
 
 En primer lugar, se tratará la lógica para los leds es simple:
 \begin{figure}[h]

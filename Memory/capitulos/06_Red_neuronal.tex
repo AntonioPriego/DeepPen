@@ -34,7 +34,7 @@ instalando las librerías de las que vamos a hacer uso, ya tenemos desplegado
 el entorno de trabajo.
 
 
-\subsection{Diseño de la red neuronal}
+\subsection{Diseño de la red neuronal\label{disenioRN}}
 El diseño de un modelo es determinante para que se desenvuelva apropiadamente
 a la hora de realizar su función. Por más que se dote al modelo durante el
 entrenamiento de un gran volumen de datos, será vano si el diseño no está enfocado
@@ -134,7 +134,7 @@ reconoce la red neuronal. Toda esta arquitectura se ilustra, simplificada, en la
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{capturas/esquemaRN.png}\\[-0,40cm]
-    \caption{Esquema de la red neuronal diseñada \label{esqRN}}
+    \caption{Esquema de funcionamiento del la red neuronal diseñada \label{esqRN}}
 \end{figure}
 
 \section{Implementación}
@@ -180,8 +180,6 @@ Al igual que en el firmware del microcontrolador, se hará uso de la función de
 por \textit{Pete Warden}\textsuperscript{\cite{petewardenmw}}. Definidas las funciones de
 rasterización, es posible rasterizar todos los trazos del dataset y destinarlos a las distintas
 fases del desarrollo del modelo como se verá en las siguientes secciones.
-
-{\color{red}Hablar de bloque 'PREPARE DATASETS'}
 
 \subsection{Entrenamiento}
 El entrenamiento del modelo será el segundo puntal que, junto con el diseño del

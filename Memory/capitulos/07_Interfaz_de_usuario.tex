@@ -21,7 +21,7 @@ de sus elementos.
 \subsection{Elección de framework para interfaz gráfica}
 Las alternativas con las que vamos a partir, tras una fase de documentación sobre
 frameworks para desarrollo de interfaces gráficas, preferiblemente multiplataforma,
-y sumarlas a las que ya conocía; se recogen en la Figura \ref{tabUI} junto a la valoración
+y sumarlas a las que ya conocía; se recogen en la Tabla \ref{tabUI}, junto a la valoración
 de algunas características importantes.
 \begin{table}[h]
     \color{mitexto}
@@ -140,6 +140,12 @@ comenzar a trabajar con la lógica detrás estos y su configuración.
 
 Para ver el resultado obtenido, consulte el apéndice \ref{ifazUsu}.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{capturas/DiagramaFlujoUI.png}\\[-0,20cm]
+    \caption{Diagrama de flujo simplificado del \textit{UI}\label{diagFlujoQT}}
+\end{figure}
+
 \section{Configuración de la interfaz}
 La configuración de la interfaz consistirá en inicializar los parámetros
 con los que parten los elementos creados en la Sección \ref{trasaQT} anterior
@@ -194,9 +200,10 @@ e interfaz, mediante \textit{señales} y \textit{slots}\textsuperscript{\cite{si
 \begin{problemas}{Error de permisos para \textit{qt.bluetooth}}
     \color{mitexto}
     En ocasiones se experimentan crashes durante la ejecución,
-    unido a un error derivado del uso de \textit{bluetooth} en los \textit{logs}, me llevó
+    unido a un error derivado del uso de \textit{bluetooth} en los \textit{logs},
+    lo que me llevó
     a investigar este problema para resolverlo. Llegando
-    a que se debía a un error de permisos de con el protocolo
+    a que se debía a un error de permisos con el protocolo
     que gestiona el \textit{bluetooth} en \textit{Linux} (\textit{BlueZ}),
     y que más adelante seguirá causando problemas, pero en este caso, pudo
     resolverse como indica el Apéndice \ref{permBTQT}.
@@ -253,9 +260,3 @@ cuando exista posibilidad simultánea de conexión por cable e inalámbrica.
 
 Véase el Apéndice \ref{psQT} para acceder a detalles de la implementación
 para la lectura del puerto serie.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{capturas/DiagramaFlujoUI.png}\\[-0,20cm]
-    \caption{Diagrama de flujo simplificado del \textit{UI}\label{diagFlujoQT}}
-\end{figure}
