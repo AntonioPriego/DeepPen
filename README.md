@@ -6,12 +6,13 @@ Reconocimiento de letras mediante DeepLearning integrado en un sistema embebido 
 ![alt text](https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/SmartPenMP.png)
 
 El proyecto consta de:
-* Firmware para el microcontrolador (Sketch)
-* Interfaz de usuario para mostrar las funcionalidades del SmartPen
+* Firmware para el microcontrolador (Sketch).
+* Interfaz de usuario para mostrar las funcionalidades del SmartPen.
 ![alt text](https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/startup.png)
 ![alt text](https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/letterbyletter.png)
-* Notebook para diseño, entrenamiento y testeo de la red neuronal
-* Software para recolectar las muestras para el dataset de la red neuronal
-* Modelos 3D para el encapsulado del SmartPen
+* Notebook para diseño, entrenamiento y testeo de la red neuronal.
+* Software para recolectar las muestras para el dataset de la red neuronal.
+![alt text](https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/capturas/DataCollector.png)
+* Modelos 3D para el encapsulado del SmartPen.
 
 [Vídeo demostración del funcionamiento](https://www.youtube.com/watch?v=xLcMaVAP_qw&ab_channel=AntonioPriego)
