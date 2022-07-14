@@ -13,3 +13,5 @@ El proyecto consta de:
 * Notebook para diseño, entrenamiento y testeo de la red neuronal
 * Software para recolectar las muestras para el dataset de la red neuronal
 * Modelos 3D para el encapsulado del SmartPen
+
+[Vídeo demostración del funcionamiento](https://www.youtube.com/watch?v=xLcMaVAP_qw&ab_channel=AntonioPriego)
