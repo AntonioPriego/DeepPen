@@ -1,5 +1,5 @@
 ### Trabajo de fin de grado de Antonio Priego (UGR). 2022.
-# "Dispositivo para detección de escritura mediante Deep Learning en un sistema empotrado" - SmartPen
+# "Dispositivo para detección de escritura mediante Deep Learning en un sistema empotrado" - SmartPen <a href="https://raw.githubusercontent.com/AntonioPriego/SmartPen/main/Memory/proyecto.pdf">:page_facing_up:</a>
 
 Reconocimiento de letras mediante Deep Learning integrado en un sistema embebido (Arduino Nano Sense 33).
 
